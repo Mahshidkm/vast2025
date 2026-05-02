@@ -1,0 +1,463 @@
+{
+  "artists": [
+    {
+      "id": 17349,
+      "name": "Beatrice Albright",
+      "firstCollaborationYear": 2031,
+      "years": [
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2034,
+        2034,
+        2034,
+        2034,
+        2035,
+        2035,
+        2035
+      ]
+    },
+    {
+      "id": 17355,
+      "name": "Daniel O'Connell",
+      "firstCollaborationYear": 2031,
+      "years": [
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2034,
+        2034,
+        2034,
+        2034,
+        2035,
+        2035,
+        2035
+      ]
+    },
+    {
+      "id": 17226,
+      "name": "Kai Reynolds",
+      "firstCollaborationYear": 2029,
+      "years": [
+        2029,
+        2029,
+        2030,
+        2032,
+        2032
+      ]
+    },
+    {
+      "id": 16983,
+      "name": "Sophie Bennett",
+      "firstCollaborationYear": 2033,
+      "years": [
+        2033,
+        2033,
+        2035,
+        2035,
+        2035
+      ]
+    },
+    {
+      "id": 16984,
+      "name": "Michael Harris",
+      "firstCollaborationYear": 2033,
+      "years": [
+        2033,
+        2033,
+        2035,
+        2035,
+        2035
+      ]
+    },
+    {
+      "id": 16985,
+      "name": "Kara Lee",
+      "firstCollaborationYear": 2033,
+      "years": [
+        2033,
+        2033,
+        2035,
+        2035,
+        2035
+      ]
+    },
+    {
+      "id": 16986,
+      "name": "Ethan Clarke",
+      "firstCollaborationYear": 2033,
+      "years": [
+        2033,
+        2033,
+        2035,
+        2035,
+        2035
+      ]
+    },
+    {
+      "id": 17041,
+      "name": "Arlo Sterling",
+      "firstCollaborationYear": 2034,
+      "years": [
+        2034,
+        2034,
+        2034,
+        2035,
+        2035,
+        2038,
+        2038
+      ]
+    },
+    {
+      "id": 17042,
+      "name": "Lyra Blaze",
+      "firstCollaborationYear": 2034,
+      "years": [
+        2034,
+        2034,
+        2034,
+        2035,
+        2035,
+        2038,
+        2038
+      ]
+    },
+    {
+      "id": 17043,
+      "name": "Orion Cruz",
+      "firstCollaborationYear": 2034,
+      "years": [
+        2034,
+        2034,
+        2034,
+        2035,
+        2035,
+        2038,
+        2038
+      ]
+    },
+    {
+      "id": 17044,
+      "name": "Elara May",
+      "firstCollaborationYear": 2034,
+      "years": [
+        2034,
+        2034,
+        2034,
+        2035,
+        2035,
+        2038,
+        2038
+      ]
+    },
+    {
+      "id": 17045,
+      "name": "Cassian Rae",
+      "firstCollaborationYear": 2034,
+      "years": [
+        2034,
+        2034,
+        2034,
+        2035,
+        2035,
+        2038,
+        2038
+      ]
+    },
+    {
+      "id": 17118,
+      "name": "Zachary Cole",
+      "firstCollaborationYear": 2037,
+      "years": [
+        2037,
+        2037,
+        2037,
+        2037,
+        2037
+      ]
+    },
+    {
+      "id": 17119,
+      "name": "Lia Grant",
+      "firstCollaborationYear": 2037,
+      "years": [
+        2037,
+        2037,
+        2037,
+        2037,
+        2037
+      ]
+    },
+    {
+      "id": 17227,
+      "name": "Aiden Harper",
+      "firstCollaborationYear": 2029,
+      "years": [
+        2029,
+        2029,
+        2032,
+        2032
+      ]
+    },
+    {
+      "id": 17228,
+      "name": "Finn Morgan",
+      "firstCollaborationYear": 2029,
+      "years": [
+        2029,
+        2029,
+        2032,
+        2032
+      ]
+    },
+    {
+      "id": 17229,
+      "name": "Skylar Brooks",
+      "firstCollaborationYear": 2029,
+      "years": [
+        2029,
+        2029,
+        2032,
+        2032
+      ]
+    },
+    {
+      "id": 17248,
+      "name": "Mia Waters",
+      "firstCollaborationYear": 2031,
+      "years": [
+        2028,
+        2028,
+        2031,
+        2031
+      ]
+    },
+    {
+      "id": 17249,
+      "name": "Lila Rivers",
+      "firstCollaborationYear": 2031,
+      "years": [
+        2028,
+        2028,
+        2031,
+        2031
+      ]
+    },
+    {
+      "id": 17256,
+      "name": "Maya Jensen",
+      "firstCollaborationYear": 2024,
+      "years": [
+        2024,
+        2024,
+        2024,
+        2024,
+        2025,
+        2025,
+        2025,
+        2026,
+        2026,
+        2026,
+        2026,
+        2033,
+        2037
+      ]
+    },
+    {
+      "id": 17257,
+      "name": "Lila \"Lilly\" Hartman",
+      "firstCollaborationYear": 2024,
+      "years": [
+        2024,
+        2024,
+        2024,
+        2024,
+        2025,
+        2025,
+        2025,
+        2026,
+        2026,
+        2026,
+        2026
+      ]
+    },
+    {
+      "id": 17258,
+      "name": "Jade Thompson",
+      "firstCollaborationYear": 2024,
+      "years": [
+        2024,
+        2024,
+        2024,
+        2024,
+        2025,
+        2025,
+        2025,
+        2026,
+        2026,
+        2026,
+        2026
+      ]
+    },
+    {
+      "id": 17259,
+      "name": "Sophie Ramirez",
+      "firstCollaborationYear": 2024,
+      "years": [
+        2024,
+        2024,
+        2024,
+        2024,
+        2025,
+        2025,
+        2025,
+        2026,
+        2026,
+        2026,
+        2026,
+        2030,
+        2035
+      ]
+    },
+    {
+      "id": 17205,
+      "name": "Liam O'Sullivan",
+      "firstCollaborationYear": 2028,
+      "years": [
+        2028
+      ]
+    },
+    {
+      "id": 17206,
+      "name": "Fiona Mercer",
+      "firstCollaborationYear": 2028,
+      "years": [
+        2028
+      ]
+    },
+    {
+      "id": 17190,
+      "name": "Astrid N\u00f8rgaard",
+      "firstCollaborationYear": 2034,
+      "years": [
+        2034
+      ]
+    },
+    {
+      "id": 17191,
+      "name": "Freya Lindholm",
+      "firstCollaborationYear": 2034,
+      "years": [
+        2034,
+        2038
+      ]
+    },
+    {
+      "id": 17296,
+      "name": "Coralia Bellweather",
+      "firstCollaborationYear": 2036,
+      "years": [
+        1995,
+        1995,
+        1997,
+        1997,
+        1999,
+        1999,
+        2001,
+        2001,
+        2001,
+        2036
+      ]
+    },
+    {
+      "id": 17310,
+      "name": "Marin Thorne",
+      "firstCollaborationYear": 2040,
+      "years": [
+        1993,
+        1993,
+        1993,
+        1994,
+        1994,
+        1995,
+        1995,
+        1995,
+        2040
+      ]
+    },
+    {
+      "id": 17165,
+      "name": "Finn McGraw",
+      "firstCollaborationYear": 2024,
+      "years": [
+        2024
+      ]
+    },
+    {
+      "id": 17166,
+      "name": "William Tidewell",
+      "firstCollaborationYear": 2024,
+      "years": [
+        2024
+      ]
+    },
+    {
+      "id": 17189,
+      "name": "Ewan MacCrae",
+      "firstCollaborationYear": 2034,
+      "years": [
+        2034,
+        2038
+      ]
+    },
+    {
+      "id": 17309,
+      "name": "Levi Holloway",
+      "firstCollaborationYear": 2036,
+      "years": [
+        1993,
+        1993,
+        1993,
+        1994,
+        1994,
+        1995,
+        1995,
+        1995,
+        2036
+      ]
+    },
+    {
+      "id": 17311,
+      "name": "Jonah Calloway",
+      "firstCollaborationYear": 2040,
+      "years": [
+        1993,
+        1993,
+        1993,
+        1994,
+        1994,
+        1995,
+        1995,
+        1995,
+        2040
+      ]
+    },
+    {
+      "id": 17164,
+      "name": "Rusty Riggins",
+      "firstCollaborationYear": 2024,
+      "years": [
+        2024,
+        2026
+      ]
+    }
+  ],
+  "yearRange": [
+    1993,
+    2040
+  ]
+}

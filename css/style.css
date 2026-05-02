@@ -1,0 +1,284 @@
+/* ================================================================
+   Global Reset & Base Styles
+   ================================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    background: black;
+    color: white;
+    padding: 18px;
+    overflow-x: auto;   /* global horizontal scrollbar when content exceeds viewport */
+    overflow-y: auto;
+}
+
+/* Main container – fixed width to keep content together, scrolls if needed */
+.container {
+    width: 1480px;               /* 900px network + 540px line chart + margins/gaps */
+    background: black;
+    border-radius: 18px;
+    padding: 5px 18px;
+    margin: 0 auto;
+}
+
+/* ================================================================
+   Header Row (Title, Year Slider, Tabs)
+   ================================================================ */
+.header-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    color: #FFD700;
+    white-space: nowrap;
+}
+
+/* Year slider controls */
+.controls {
+    background: #111;
+    padding: 7px 14px;
+    border-radius: 54px;
+    box-shadow: inset 0 1px 2px rgba(255,255,255,0.05), 0 2px 6px rgba(0,0,0,0.5);
+    white-space: nowrap;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.control-group label {
+    font-weight: 600;
+    color: #FFD700;
+    background: #1a1a1a;
+    padding: 4px 10px;
+    border-radius: 27px;
+    white-space: nowrap;
+    font-size: 0.85rem;
+}
+
+.value-badge {
+    background: #FFD700;
+    color: black;
+    padding: 2px 7px;
+    border-radius: 27px;
+    margin-left: 7px;
+}
+
+input[type="range"] {
+    width: 250px;
+    cursor: pointer;
+    background: #333;
+    height: 3px;
+    border-radius: 3px;
+}
+
+/* Tabs – aligned to the right of the container */
+.tabs {
+    margin-left: auto;
+    position: relative;
+    z-index: 101;
+    white-space: nowrap;
+    left: 40px;               /* fine‑tune horizontal position */
+}
+.tab-btn {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 36px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.2s;
+    position: relative;
+    z-index: 102;
+    pointer-events: auto !important;
+    text-decoration: none;
+}
+.tab-btn.active {
+    background: #FFD700;
+    color: black;
+    font-weight: bold;
+}
+.tab-btn:hover {
+    background: #444;
+}
+a.tab-btn {
+    text-decoration: none;
+}
+
+/* ================================================================
+   Two‑Column Layout (Network + Line Chart)
+   ================================================================ */
+#viz {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: black;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+/* Left column: network circle + legend */
+#left-col {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Network SVG – fixed size (scaled via CSS to fit container) */
+#network-container svg {
+    width: 900px;
+    height: 660px;
+    background: transparent;
+    display: block;
+}
+
+/* Legend – two rows, directly below the network */
+.legend {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: #111;
+    padding: 10px 18px;
+    border-radius: 36px;
+    border: 1px solid #222;
+}
+.legend-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+.legend-row div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ddd;
+    font-size: 11px;
+}
+.legend-row span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Right column (line chart) – originally named "slope", now holds line chart */
+#slope-container {
+    flex: 0 0 auto;
+    background: black;
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+}
+#slope-chart svg {
+    width: 540px;
+    height: auto;
+    display: block;
+}
+
+/* ================================================================
+   Tooltips & Node Styling
+   ================================================================ */
+.tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.95);
+    color: #f0ebe0;
+    padding: 9px 12px;
+    border-radius: 11px;
+    pointer-events: none;
+    font-size: 11px;
+    line-height: 1.4;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    max-width: 420px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    z-index: 50;
+    font-family: monospace;
+    border-left: 4px solid #FFD700;
+}
+
+.node text {
+    font-weight: 500;
+    text-shadow: 0 1px 0 black;
+    letter-spacing: 0.2px;
+}
+
+.node circle:hover {
+    stroke: white !important;
+    stroke-width: 3px !important;
+    filter: none !important;
+}
+
+/* ================================================================
+   Views (Network / Trends / Sankey)
+   ================================================================ */
+.view {
+    display: none;
+}
+.view.active-view {
+    display: flex;
+    gap: 18px;
+}
+#network-view {
+    display: flex;
+    gap: 18px;
+}
+#trends-view {
+    position: relative;
+    min-height: 540px;
+    background: black;
+    border-radius: 12px;
+    padding: 0;
+}
+
+/* Dynamic content container – keeps tabs above */
+#dynamic-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Additional tooltip for line chart (used by trends page) */
+.linechart-tooltip {
+    z-index: 50 !important;
+}
+
+/* ================================================================
+   Responsive Behaviour (stack on narrow screens)
+   ================================================================ */
+@media (max-width: 900px) {
+    .container { padding: 10px; }
+    .header-row { flex-direction: column; white-space: normal; }
+    .controls { width: 100%; text-align: center; white-space: normal; }
+    .tabs { margin-left: 0; justify-content: center; white-space: normal; left: 0; }
+    #viz { flex-direction: column; }
+    #left-col { width: 100%; }
+    #slope-container { width: 100%; }
+    #network-container svg { width: 100%; max-width: 900px; height: auto; }
+    #slope-chart svg { width: 100%; max-width: 540px; }
+    .control-group label { font-size: 0.75rem; }
+    .legend-row { gap: 12px; }
+    .legend-row div { font-size: 10px; }
+}

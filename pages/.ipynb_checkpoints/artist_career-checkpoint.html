@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Career Comparison</title>
+    <link rel="stylesheet" href="../css/artist_career.css">
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="container">
+    <h1>🎤 Artist Career Comparison</h1>
+    <div class="search-section">
+        <div class="artist-input">
+            <label>Artist 1</label>
+            <input type="text" id="artist1" placeholder="e.g., Sailor Shift">
+        </div>
+        <div class="artist-input">
+            <label>Artist 2</label>
+            <input type="text" id="artist2" placeholder="e.g., Another Artist">
+        </div>
+        <div class="artist-input">
+            <label>Artist 3</label>
+            <input type="text" id="artist3" placeholder="e.g., Third Artist">
+        </div>
+        <button id="compareBtn">Compare</button>
+    </div>
+    <div id="chartsContainer" class="charts-grid"></div>
+    <div id="loadingMsg" class="loading" style="display: none;">Loading charts...</div>
+    <div id="errorMsg" class="error"></div>
+    <footer>Data from artist career JSON. Hover over charts for details.</footer>
+</div>
+
+<script src="../js/artist_career.js"></script>
+</body>
+</html>

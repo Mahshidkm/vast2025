@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanus Folk Superstar Predictor – Weighted Factors</title>
+    <link rel="stylesheet" href="../css/superstar_predictor.css">
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="container">
+    <h1>🔮 Oceanus Folk Superstar Predictor</h1>
+    
+    <!-- Artist selection for parallel coordinates with default values -->
+    <div class="artist-selector">
+        <div class="artist-input-group">
+            <label>Artist 1</label>
+            <input type="text" id="artist1" value="Sailor Shift" placeholder="Enter artist name">
+        </div>
+        <div class="artist-input-group">
+            <label>Artist 2</label>
+            <input type="text" id="artist2" value="Maya Jensen" placeholder="Enter artist name">
+        </div>
+        <div class="artist-input-group">
+            <label>Artist 3</label>
+            <input type="text" id="artist3" value="Sophie Ramirez" placeholder="Enter artist name">
+        </div>
+    </div>
+    
+    <div class="controls">
+        <div class="weight-panel" id="weightPanel"></div>
+        <button id="updateBtn">Update Rankings & Parallel Chart</button>
+    </div>
+    
+    <div class="chart-container">
+        <div id="parallelPlot" style="width:100%; height:600px;"></div>
+        <div id="parallelError" class="error-msg-small" style="text-align:center; margin-top:10px;"></div>
+    </div>
+    
+    <!-- Display scores of selected artists -->
+    <div id="selectedScores" class="selected-scores">
+        <h3>📊 Scores of Selected Artists</h3>
+        <ul id="scoreList"></ul>
+    </div>
+    
+    <div class="rankings" id="rankingsDiv">
+        <h2>🏆 Predicted Superstars (Weighted Score) – Top 10 Overall</h2>
+        <ol id="rankList"></ol>
+    </div>
+    
+    <div class="note">
+        <strong>Note:</strong> “Oceanus Growth Rate” is the average yearly change in number of Oceanus Folk works (positive only).<br>
+        “Overall Growth Rate” is the average yearly change in total works of any genre.<br>
+        <strong>Parallel chart:</strong> shows only the three artists you select above (if valid).<br>
+    </div>
+</div>
+
+<script src="../js/superstar_predictor.js"></script>
+</body>
+</html>

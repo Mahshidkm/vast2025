@@ -1,0 +1,425 @@
+[
+  {
+    "id": 17164,
+    "name": "Rusty Riggins",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 2,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 17165,
+    "name": "Finn McGraw",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 1,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 17166,
+    "name": "William Tidewell",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 1,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 17296,
+    "name": "Coralia Bellweather",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 9,
+    "oceanusAfterCount": 1,
+    "notableBeforeCount": 4,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 17041,
+    "name": "Arlo Sterling",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 7,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 4
+  },
+  {
+    "id": 17042,
+    "name": "Lyra Blaze",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 7,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 4
+  },
+  {
+    "id": 17043,
+    "name": "Orion Cruz",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 7,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 4
+  },
+  {
+    "id": 17044,
+    "name": "Elara May",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 7,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 4
+  },
+  {
+    "id": 17045,
+    "name": "Cassian Rae",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 7,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 4
+  },
+  {
+    "id": 17309,
+    "name": "Levi Holloway",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 8,
+    "oceanusAfterCount": 1,
+    "notableBeforeCount": 4,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 17310,
+    "name": "Marin Thorne",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 8,
+    "oceanusAfterCount": 1,
+    "notableBeforeCount": 4,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 17311,
+    "name": "Jonah Calloway",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 8,
+    "oceanusAfterCount": 1,
+    "notableBeforeCount": 4,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 17189,
+    "name": "Ewan MacCrae",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 2,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 17190,
+    "name": "Astrid N\u00f8rgaard",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 1,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 17191,
+    "name": "Freya Lindholm",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 2,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 17205,
+    "name": "Liam O'Sullivan",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 1,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 17206,
+    "name": "Fiona Mercer",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 1,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 16958,
+    "name": "Zane Cruz",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 16959,
+    "name": "Iris Moon",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 17349,
+    "name": "Beatrice Albright",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 12,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 12
+  },
+  {
+    "id": 17226,
+    "name": "Kai Reynolds",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 5,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 3
+  },
+  {
+    "id": 17355,
+    "name": "Daniel O'Connell",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 12,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 12
+  },
+  {
+    "id": 17227,
+    "name": "Aiden Harper",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 4,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 17228,
+    "name": "Finn Morgan",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 4,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 17229,
+    "name": "Skylar Brooks",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 4,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 16983,
+    "name": "Sophie Bennett",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 5,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 16984,
+    "name": "Michael Harris",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 5,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 16985,
+    "name": "Kara Lee",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 5,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 16986,
+    "name": "Ethan Clarke",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 5,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 17118,
+    "name": "Zachary Cole",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 5,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 17119,
+    "name": "Lia Grant",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 5,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 2
+  },
+  {
+    "id": 17248,
+    "name": "Mia Waters",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 2,
+    "oceanusAfterCount": 2,
+    "notableBeforeCount": 1,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 16993,
+    "name": "Olivia Carter",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 16994,
+    "name": "Lucas Bennett",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 16995,
+    "name": "Maya Torres",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 17249,
+    "name": "Lila Rivers",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 2,
+    "oceanusAfterCount": 2,
+    "notableBeforeCount": 1,
+    "notableAfterCount": 1
+  },
+  {
+    "id": 17256,
+    "name": "Maya Jensen",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 13,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 6
+  },
+  {
+    "id": 17257,
+    "name": "Lila \"Lilly\" Hartman",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 11,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 4
+  },
+  {
+    "id": 17258,
+    "name": "Jade Thompson",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 11,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 4
+  },
+  {
+    "id": 17259,
+    "name": "Sophie Ramirez",
+    "influence_type": "collaborators",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 13,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 6
+  },
+  {
+    "id": 17408,
+    "name": "Scarlett Moon",
+    "influence_type": "influenced",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 17107,
+    "name": "Chloe Montgomery",
+    "influence_type": "influenced",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 17108,
+    "name": "Nathaniel Brooks",
+    "influence_type": "influenced",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 17109,
+    "name": "Clara Davis",
+    "influence_type": "influenced",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 17402,
+    "name": "N.V. Blake",
+    "influence_type": "influenced",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 17406,
+    "name": "Ivy Steele",
+    "influence_type": "influenced",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  },
+  {
+    "id": 17407,
+    "name": "Nate Wild",
+    "influence_type": "influenced",
+    "oceanusBeforeCount": 0,
+    "oceanusAfterCount": 0,
+    "notableBeforeCount": 0,
+    "notableAfterCount": 0
+  }
+]

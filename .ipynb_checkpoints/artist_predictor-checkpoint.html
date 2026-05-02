@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanus Folk Superstar Predictor – Weighted Factors</title>
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            background: black;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 { color: #FFD700; text-align: center; }
+        .controls {
+            background: #111;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+        }
+        .weight-panel {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .weight-item {
+            flex: 1;
+            min-width: 140px;
+        }
+        .weight-item label {
+            display: block;
+            margin-bottom: 5px;
+            color: #FFD700;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            background: #222;
+            border: 1px solid #555;
+            border-radius: 20px;
+            color: white;
+        }
+        button {
+            background: #FFD700;
+            color: black;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        button:hover { background: #ffaa00; }
+        .rankings {
+            background: #111;
+            border-radius: 20px;
+            padding: 15px;
+            margin-top: 30px;
+            border: 1px solid #333;
+        }
+        .rankings h2 { color: #FFD700; margin-top: 0; }
+        .rankings ol {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+        }
+        .rankings li { font-size: 1.1rem; margin-bottom: 10px; }
+        .chart-container {
+            background: #0a0a0a;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .note {
+            color: #aaa;
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .error-msg {
+            color: #ff6b6b;
+            background: #1a0000;
+            padding: 15px;
+            border-radius: 12px;
+            margin: 20px 0;
+            text-align: center;
+            border-left: 4px solid #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🔮 Oceanus Folk Superstar Predictor</h1>
+    <div class="controls">
+        <div class="weight-panel" id="weightPanel"></div>
+        <button id="updateBtn">Update Rankings & Parallel Coordinates</button>
+    </div>
+    <div class="chart-container">
+        <div id="parallelPlot" style="width:100%; height:600px;"></div>
+    </div>
+    <div class="rankings" id="rankingsDiv">
+        <h2>🏆 Predicted Superstars (Weighted Score)</h2>
+        <ol id="rankList"></ol>
+    </div>
+    <div class="note">
+        Adjust weights. Factors are taken directly from your JSON’s Oceanus Folk genre entry.<br>
+        <strong>Note:</strong> “Oceanus Growth Rate” is the average yearly change in number of Oceanus Folk works (positive only).<br>
+        “Overall Growth Rate” is the average yearly change in total works of any genre.
+    </div>
+</div>
+
+<script>
+    let artistData = null;
+    let currentWeights = {};
+
+    function showError(msg) {
+        const rankList = document.getElementById('rankList');
+        if (rankList) rankList.innerHTML = `<li class="error-msg">❌ ${msg}</li>`;
+        console.error(msg);
+    }
+
+    async function loadData() {
+        try {
+            const response = await fetch("data/artist_career.json");
+            if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            artistData = await response.json();
+            console.log(`Loaded ${artistData.length} artists`);
+            return true;
+        } catch (err) {
+            showError(`Failed to load data/artist_career.json: ${err.message}`);
+            return false;
+        }
+    }
+
+    // Extract Oceanus Folk data from the 'info' array (aggregated per genre)
+    function getOceanusInfo(artist) {
+        const oceanusEntry = (artist.info || []).find(entry => entry.genre === "Oceanus Folk");
+        if (!oceanusEntry) return null;
+        return {
+            total_works: oceanusEntry.total_works || 0,
+            total_notable: oceanusEntry.total_notable_works || 0
+        };
+    }
+
+    // NEW: compute Oceanus-specific growth rate from oceanus_yearly
+    function getOceanusGrowthRate(artist) {
+        const yearly = artist.oceanus_yearly || [];
+        if (yearly.length < 2) return 0;
+        const first = yearly[0];
+        const last = yearly[yearly.length - 1];
+        const yearsDiff = last.year - first.year;
+        if (yearsDiff <= 0) return 0;
+        const countChange = last.count - first.count;
+        return Math.max(0, countChange / yearsDiff); // non‑negative
+    }
+
+    // Get other metrics (roles, influenced, collaborators, overall growth rate)
+    function getOtherMetrics(artist) {
+        const yearEntries = (artist.info || []).filter(i => i.year !== undefined).sort((a,b) => a.year - b.year);
+        const performer = artist.role_counts?.PerformerOf || 0;
+        const lyricist = artist.role_counts?.LyricistOf || 0;
+        const totalInfluenced = yearEntries.reduce((sum, e) => sum + (e.total_influenced_artists || 0), 0);
+        const totalCollaborators = yearEntries.reduce((sum, e) => sum + (e.total_collaborators || 0), 0);
+        let growthRate = 0;
+        if (yearEntries.length >= 2) {
+            const firstWorks = yearEntries[0].total_works;
+            const lastWorks = yearEntries[yearEntries.length-1].total_works;
+            const yearsDiff = yearEntries[yearEntries.length-1].year - yearEntries[0].year;
+            if (yearsDiff > 0) growthRate = (lastWorks - firstWorks) / yearsDiff;
+        }
+        growthRate = Math.max(0, growthRate);
+        return { performer, lyricist, totalInfluenced, totalCollaborators, growthRate };
+    }
+
+    function getFactors(artist) {
+        const oceanus = getOceanusInfo(artist);
+        if (!oceanus) return null;  // artist has no Oceanus Folk works
+        const other = getOtherMetrics(artist);
+        const oceanusGrowth = getOceanusGrowthRate(artist);
+        return {
+            total_oceanus_works: oceanus.total_works,
+            notable_oceanus_works: oceanus.total_notable,
+            role_performer: other.performer,
+            role_lyricist: other.lyricist,
+            total_influenced_artists: other.totalInfluenced,
+            total_collaborators: other.totalCollaborators,
+            growth_rate: other.growthRate,           // overall growth
+            oceanus_growth_rate: oceanusGrowth       // new: Oceanus‑only growth
+        };
+    }
+
+    function isEligible(artist) {
+        return getOceanusInfo(artist) !== null;
+    }
+
+    function prepareParallelData(artists) {
+        const factorsList = artists.map(a => getFactors(a)).filter(f => f !== null);
+        if (factorsList.length === 0) return [];
+        const dimNames = Object.keys(factorsList[0]);
+        const dimensions = dimNames.map(dim => {
+            const values = factorsList.map(f => f[dim]);
+            const maxVal = Math.max(...values, 1);
+            return {
+                label: dim.replace(/_/g, ' ').toUpperCase(),
+                values: values,
+                tickformat: '.1f',
+                range: [0, maxVal]
+            };
+        });
+        const trace = {
+            type: 'parcoords',
+            line: { color: 'rgba(255,215,0,0.8)', showscale: false },
+            dimensions: dimensions,
+            customdata: artists.map(a => a.artist_name),
+            hovertemplate: '<b>%{customdata}</b><br>' + dimNames.map((d, idx) => `${d}: %{dimensions[${idx}].value}`).join('<br>') + '<extra></extra>'
+        };
+        return [trace];
+    }
+
+    function computeScores(artists, weights) {
+        const factorsList = artists.map(a => getFactors(a)).filter(f => f !== null);
+        const maxVals = {};
+        Object.keys(weights).forEach(dim => {
+            maxVals[dim] = Math.max(...factorsList.map(f => f[dim]), 1);
+        });
+        return artists.map((artist, idx) => {
+            const f = factorsList[idx];
+            if (!f) return null;
+            let score = 0;
+            for (let dim in weights) {
+                if (maxVals[dim] > 0) {
+                    score += (f[dim] / maxVals[dim]) * weights[dim];
+                }
+            }
+            return { name: artist.artist_name, score: score, factors: f };
+        }).filter(r => r !== null).sort((a,b) => b.score - a.score);
+    }
+
+    function render(artists, weights) {
+        if (!artists.length) return;
+        const trace = prepareParallelData(artists);
+        if (trace.length === 0) {
+            showError("No valid data for parallel plot.");
+            return;
+        }
+        const layout = {
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            font: { color: 'white' },
+            parcoords: {
+                labelfont: { color: '#FFD700', size: 12 },
+                tickfont: { color: 'white' },
+                rangefont: { color: 'white' }
+            }
+        };
+        Plotly.newPlot('parallelPlot', trace, layout, { responsive: true }).catch(err => showError("Plot error: " + err.message));
+        const ranked = computeScores(artists, weights);
+        console.log("Top 5 artists:", ranked.slice(0,5).map(r => `${r.name} (score ${r.score.toFixed(2)})`));
+        const rankList = document.getElementById('rankList');
+        rankList.innerHTML = ranked.slice(0, 15).map((r, idx) => `<li>${idx+1}. <strong>${r.name}</strong> – Score: ${r.score.toFixed(2)}</li>`).join('');
+    }
+
+    function createWeightControls(defaultWeights) {
+        const panel = document.getElementById('weightPanel');
+        panel.innerHTML = '';
+        const factorNames = {
+            total_oceanus_works: "Total Oceanus Works",
+            notable_oceanus_works: "Notable Oceanus Works",
+            role_performer: "Performer Role Count",
+            role_lyricist: "Lyricist Role Count",
+            total_influenced_artists: "Influenced Artists (all)",
+            total_collaborators: "Collaborators Count",
+            growth_rate: "Overall Growth Rate (yearly)",
+            oceanus_growth_rate: "Oceanus Growth Rate (yearly)"   // new
+        };
+        for (let dim in defaultWeights) {
+            const div = document.createElement('div');
+            div.className = 'weight-item';
+            const labelText = factorNames[dim] || dim.replace(/_/g, ' ');
+            div.innerHTML = `<label>${labelText} weight</label><input type="number" id="weight_${dim}" value="${defaultWeights[dim]}" step="0.1" min="0" max="10">`;
+            panel.appendChild(div);
+            currentWeights[dim] = defaultWeights[dim];
+        }
+    }
+
+    function getCurrentWeights() {
+        const weights = {};
+        for (let dim in currentWeights) {
+            const input = document.getElementById(`weight_${dim}`);
+            weights[dim] = input ? parseFloat(input.value) : currentWeights[dim];
+        }
+        return weights;
+    }
+
+    async function init() {
+        const ok = await loadData();
+        if (!ok || !artistData) return;
+        const eligible = artistData.filter(isEligible);
+        console.log(`Artists with Oceanus Folk works: ${eligible.length}`);
+        if (eligible.length === 0) {
+            showError("No artists with Oceanus Folk works found.");
+            return;
+        }
+        const defaultWeights = {
+            total_oceanus_works: 1.0,
+            notable_oceanus_works: 2.5,
+            role_performer: 1.0,
+            role_lyricist: 1.0,
+            total_influenced_artists: 1.5,
+            total_collaborators: 0.7,
+            growth_rate: 2.0,
+            oceanus_growth_rate: 2.0   // new default weight
+        };
+        createWeightControls(defaultWeights);
+        currentWeights = defaultWeights;
+        render(eligible, defaultWeights);
+        document.getElementById('updateBtn').onclick = () => {
+            const newWeights = getCurrentWeights();
+            render(eligible, newWeights);
+        };
+    }
+
+    init();
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #FFD700;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.artist-input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.artist-input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #FFD700;
+}
+
+.artist-input input {
+    width: 100%;
+    padding: 10px 12px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.artist-input input:focus {
+    outline: none;
+    border-color: #FFD700;
+}
+
+button {
+    background: #FFD700;
+    color: black;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 22px;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #ffaa00;
+    transform: scale(1.02);
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.chart-card {
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(2px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    padding: 12px;
+    transition: 0.2s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.chart-card:hover {
+    border-color: rgba(255, 215, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+.chart-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.2rem;
+    color: #FFD700;
+    text-align: center;
+    font-weight: 500;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+
+.error {
+    color: #ff6b6b;
+    text-align: center;
+    padding: 10px;
+    background: rgba(255,0,0,0.1);
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #777;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+}

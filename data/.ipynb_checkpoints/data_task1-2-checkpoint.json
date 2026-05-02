@@ -1,0 +1,1620 @@
+{
+  "nodes": [
+    {
+      "id": 17349,
+      "type": "collaborator",
+      "name": "Beatrice Albright",
+      "firstYear": 2031
+    },
+    {
+      "id": 17355,
+      "type": "collaborator",
+      "name": "Daniel O'Connell",
+      "firstYear": 2031
+    },
+    {
+      "id": 17226,
+      "type": "collaborator",
+      "name": "Kai Reynolds",
+      "firstYear": 2029
+    },
+    {
+      "id": 16958,
+      "type": "collaborator",
+      "name": "Zane Cruz",
+      "firstYear": 2031
+    },
+    {
+      "id": 16959,
+      "type": "collaborator",
+      "name": "Iris Moon",
+      "firstYear": 2031
+    },
+    {
+      "id": 16983,
+      "type": "collaborator",
+      "name": "Sophie Bennett",
+      "firstYear": 2033
+    },
+    {
+      "id": 16984,
+      "type": "collaborator",
+      "name": "Michael Harris",
+      "firstYear": 2033
+    },
+    {
+      "id": 16985,
+      "type": "collaborator",
+      "name": "Kara Lee",
+      "firstYear": 2033
+    },
+    {
+      "id": 16986,
+      "type": "collaborator",
+      "name": "Ethan Clarke",
+      "firstYear": 2033
+    },
+    {
+      "id": 16993,
+      "type": "collaborator",
+      "name": "Olivia Carter",
+      "firstYear": 2033
+    },
+    {
+      "id": 16994,
+      "type": "collaborator",
+      "name": "Lucas Bennett",
+      "firstYear": 2033
+    },
+    {
+      "id": 16995,
+      "type": "collaborator",
+      "name": "Maya Torres",
+      "firstYear": 2033
+    },
+    {
+      "id": 17041,
+      "type": "collaborator",
+      "name": "Arlo Sterling",
+      "firstYear": 2034
+    },
+    {
+      "id": 17042,
+      "type": "collaborator",
+      "name": "Lyra Blaze",
+      "firstYear": 2034
+    },
+    {
+      "id": 17043,
+      "type": "collaborator",
+      "name": "Orion Cruz",
+      "firstYear": 2034
+    },
+    {
+      "id": 17044,
+      "type": "collaborator",
+      "name": "Elara May",
+      "firstYear": 2034
+    },
+    {
+      "id": 17045,
+      "type": "collaborator",
+      "name": "Cassian Rae",
+      "firstYear": 2034
+    },
+    {
+      "id": 17118,
+      "type": "collaborator",
+      "name": "Zachary Cole",
+      "firstYear": 2037
+    },
+    {
+      "id": 17119,
+      "type": "collaborator",
+      "name": "Lia Grant",
+      "firstYear": 2037
+    },
+    {
+      "id": 17227,
+      "type": "collaborator",
+      "name": "Aiden Harper",
+      "firstYear": 2029
+    },
+    {
+      "id": 17228,
+      "type": "collaborator",
+      "name": "Finn Morgan",
+      "firstYear": 2029
+    },
+    {
+      "id": 17229,
+      "type": "collaborator",
+      "name": "Skylar Brooks",
+      "firstYear": 2029
+    },
+    {
+      "id": 17248,
+      "type": "collaborator",
+      "name": "Mia Waters",
+      "firstYear": 2031
+    },
+    {
+      "id": 17249,
+      "type": "collaborator",
+      "name": "Lila Rivers",
+      "firstYear": 2031
+    },
+    {
+      "id": 17256,
+      "type": "collaborator",
+      "name": "Maya Jensen",
+      "firstYear": 2024
+    },
+    {
+      "id": 17257,
+      "type": "collaborator",
+      "name": "Lila \"Lilly\" Hartman",
+      "firstYear": 2024
+    },
+    {
+      "id": 17258,
+      "type": "collaborator",
+      "name": "Jade Thompson",
+      "firstYear": 2024
+    },
+    {
+      "id": 17259,
+      "type": "collaborator",
+      "name": "Sophie Ramirez",
+      "firstYear": 2024
+    },
+    {
+      "id": 17205,
+      "type": "collaborator",
+      "name": "Liam O'Sullivan",
+      "firstYear": 2028
+    },
+    {
+      "id": 17206,
+      "type": "collaborator",
+      "name": "Fiona Mercer",
+      "firstYear": 2028
+    },
+    {
+      "id": 17190,
+      "type": "collaborator",
+      "name": "Astrid N\u00f8rgaard",
+      "firstYear": 2034
+    },
+    {
+      "id": 17191,
+      "type": "collaborator",
+      "name": "Freya Lindholm",
+      "firstYear": 2034
+    },
+    {
+      "id": 17296,
+      "type": "collaborator",
+      "name": "Coralia Bellweather",
+      "firstYear": 2036
+    },
+    {
+      "id": 17310,
+      "type": "collaborator",
+      "name": "Marin Thorne",
+      "firstYear": 2040
+    },
+    {
+      "id": 17165,
+      "type": "collaborator",
+      "name": "Finn McGraw",
+      "firstYear": 2024
+    },
+    {
+      "id": 17166,
+      "type": "collaborator",
+      "name": "William Tidewell",
+      "firstYear": 2024
+    },
+    {
+      "id": 17189,
+      "type": "collaborator",
+      "name": "Ewan MacCrae",
+      "firstYear": 2034
+    },
+    {
+      "id": 17309,
+      "type": "collaborator",
+      "name": "Levi Holloway",
+      "firstYear": 2036
+    },
+    {
+      "id": 17311,
+      "type": "collaborator",
+      "name": "Jonah Calloway",
+      "firstYear": 2040
+    },
+    {
+      "id": 17164,
+      "type": "collaborator",
+      "name": "Rusty Riggins",
+      "firstYear": 2024
+    },
+    {
+      "id": 17107,
+      "type": "influenced",
+      "name": "Chloe Montgomery",
+      "firstYear": 2031
+    },
+    {
+      "id": 17108,
+      "type": "influenced",
+      "name": "Nathaniel Brooks",
+      "firstYear": 2031
+    },
+    {
+      "id": 17109,
+      "type": "influenced",
+      "name": "Clara Davis",
+      "firstYear": 2031
+    },
+    {
+      "id": 17408,
+      "type": "influenced",
+      "name": "Scarlett Moon",
+      "firstYear": 2031
+    },
+    {
+      "id": 17402,
+      "type": "influenced",
+      "name": "N.V. Blake",
+      "firstYear": 2031
+    },
+    {
+      "id": 17406,
+      "type": "influenced",
+      "name": "Ivy Steele",
+      "firstYear": 2031
+    },
+    {
+      "id": 17407,
+      "type": "influenced",
+      "name": "Nate Wild",
+      "firstYear": 2031
+    }
+  ],
+  "links": [
+    {
+      "source": "sailor",
+      "target": 17349,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17350,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17349,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17350,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17355,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17356,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17355,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17356,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17226,
+      "year": 2030,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17410,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17226,
+      "year": 2029,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17231,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17226,
+      "year": 2029,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17231,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16958,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 16961,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16958,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 16961,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16959,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 16961,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16959,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 16961,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16983,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 16989,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16983,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 16989,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16984,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 16989,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16984,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 16989,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16985,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 16989,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16985,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 16989,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16986,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 16989,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16986,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 16989,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16993,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 16999,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16993,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 16999,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16994,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 16999,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16994,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 16999,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16995,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 16999,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 16995,
+      "year": 2033,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 16999,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17041,
+      "year": 2035,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17048,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17041,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17047,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17041,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17049,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17041,
+      "year": 2035,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17048,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17041,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17047,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17041,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17049,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17042,
+      "year": 2035,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17048,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17042,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17047,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17042,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17049,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17042,
+      "year": 2035,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17048,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17042,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17047,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17042,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17049,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17043,
+      "year": 2035,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17048,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17043,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17047,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17043,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17049,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17043,
+      "year": 2035,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17048,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17043,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17047,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17043,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17049,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17044,
+      "year": 2035,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17048,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17044,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17047,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17044,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17049,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17044,
+      "year": 2035,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17048,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17044,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17047,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17044,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17049,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17045,
+      "year": 2035,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17048,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17045,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17047,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17045,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17049,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17045,
+      "year": 2035,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17048,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17045,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17047,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17045,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17049,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17118,
+      "year": 2037,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17121,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17118,
+      "year": 2037,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17121,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17119,
+      "year": 2037,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17121,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17119,
+      "year": 2037,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17121,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17227,
+      "year": 2029,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17231,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17227,
+      "year": 2029,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17231,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17228,
+      "year": 2029,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17231,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17228,
+      "year": 2029,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17231,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17229,
+      "year": 2029,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17231,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17229,
+      "year": 2029,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17231,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17248,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17252,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17248,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17252,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17249,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17252,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17249,
+      "year": 2031,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17252,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17264,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17262,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17271,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17265,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17267,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17269,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2037,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17121,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17270,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17268,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17263,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17266,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17262,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17256,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17263,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17264,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17262,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17271,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17265,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17267,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17269,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17270,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17268,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17263,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17266,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17262,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17257,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17263,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17264,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17262,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17271,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17265,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17267,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17269,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17270,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17268,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17263,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17266,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17262,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17258,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17263,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17264,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17262,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17271,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17265,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17263,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17267,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17269,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17270,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17268,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17263,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17266,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2025,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17262,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17259,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "PerformerOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17205,
+      "year": 2028,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17272,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17206,
+      "year": 2028,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17272,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17190,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17275,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17191,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17275,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17191,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17277,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17296,
+      "year": 2036,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17276,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17310,
+      "year": 2040,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17278,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17165,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17166,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "ComposerOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17189,
+      "year": 2034,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17275,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17189,
+      "year": 2038,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17277,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17309,
+      "year": 2036,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17276,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17311,
+      "year": 2040,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17278,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17164,
+      "year": 2024,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17261,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17164,
+      "year": 2026,
+      "type": "collaboration",
+      "role": "LyricistOf",
+      "work": 17263,
+      "score": 1
+    },
+    {
+      "source": "sailor",
+      "target": 17107,
+      "year": 2031,
+      "type": "influence",
+      "score": 1,
+      "work": 17112,
+      "sailor_work": 17268
+    },
+    {
+      "source": "sailor",
+      "target": 17108,
+      "year": 2031,
+      "type": "influence",
+      "score": 1,
+      "work": 17112,
+      "sailor_work": 17268
+    },
+    {
+      "source": "sailor",
+      "target": 17109,
+      "year": 2031,
+      "type": "influence",
+      "score": 1,
+      "work": 17112,
+      "sailor_work": 17268
+    },
+    {
+      "source": "sailor",
+      "target": 17408,
+      "year": 2031,
+      "type": "influence",
+      "score": 0.5,
+      "work": 17112,
+      "sailor_work": 17268
+    },
+    {
+      "source": "sailor",
+      "target": 17402,
+      "year": 2031,
+      "type": "influence",
+      "score": 0.5,
+      "work": 17112,
+      "sailor_work": 17268
+    },
+    {
+      "source": "sailor",
+      "target": 17406,
+      "year": 2031,
+      "type": "influence",
+      "score": 0.5,
+      "work": 17112,
+      "sailor_work": 17268
+    },
+    {
+      "source": "sailor",
+      "target": 17407,
+      "year": 2031,
+      "type": "influence",
+      "score": 0.5,
+      "work": 17112,
+      "sailor_work": 17268
+    }
+  ]
+}

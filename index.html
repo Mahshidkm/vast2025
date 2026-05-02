@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sailor's Influence & Collaboration</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/linechart.css?v=2">
+    <link rel="stylesheet" href="css/sankey.css?v=2">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with title left, slider middle, tabs right -->
+        <div class="header-row">
+            <h1>Sailor's Musical Network</h1>
+            <div class="controls">
+                <div class="control-group">
+                    <label>📅 Year: <span id="yearLabel" class="value-badge">2020</span></label>
+                    <input type="range" id="yearSlider" min="2020" max="2030" step="1" value="2020">
+                </div>
+            </div>
+            <div class="tabs">
+                <button id="tab-network" class="tab-btn active">Sailor Network</button>
+                <button id="tab-trends" class="tab-btn">Oceanus Folk Trends</button>
+                <button id="tab-sankey" class="tab-btn">Genre & Artist Influence</button>
+                <a href="pages/superstar_predictor.html" target="_blank" class="tab-btn">Superstar Predictor</a>
+            </div>
+        </div>
+
+        <!-- Dynamic content area: views toggled via tabs -->
+        <div id="dynamic-content">
+            <!-- NETWORK VIEW -->
+            <div id="network-view" class="view active-view">
+                <div id="left-col">
+                    <div id="network-container"></div>
+                    <!-- Legend in two rows -->
+                    <div class="legend">
+                        <div class="legend-row">
+                            <div><span style="background:#FFD700;"></span> Sailor</div>
+                            <div><span style="background:#8E44AD;"></span> Artists who influenced Sailor</div>
+                            <div><span style="background:#006C8F;"></span> Artists who collaborated with Sailor</div>
+                            <div><span style="background:#E65C4A;"></span> Artists who are inspired by Sailor</div>
+                        </div>
+                        <div class="legend-row">
+                            <div>
+                                <span style="background:#C39BD3;"></span>
+                                <span style="background:#A0F0FF;"></span>
+                                <span style="background:#FF9A76;"></span>
+                                Artists active this year
+                            </div>
+                            <div>Circle size = cumulative score</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="slope-container">
+                    <div id="slope-chart"></div>
+                </div>
+            </div>
+
+            <!-- TRENDS VIEW -->
+            <div id="trends-view" class="view" style="display: none;">
+                <!-- Content loaded from pages/oceanus_trends.html -->
+            </div>
+
+            <!-- SANKEY VIEW -->
+            <div id="sankey-view" class="view" style="display: none;">
+                <!-- Content loaded from pages/sankey.html -->
+            </div>
+        </div>
+
+        <div class="tooltip"></div>
+    </div>
+
+    <script src="js/viz.js"></script>
+    <script src="js/tabs.js"></script>
+</body>
+</html>

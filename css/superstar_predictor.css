@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #FFD700;
+    text-align: center;
+}
+
+.controls {
+    background: #111;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+}
+
+.weight-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.weight-item {
+    flex: 1;
+    min-width: 140px;
+}
+
+.weight-item label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    background: #222;
+    border: 1px solid #555;
+    border-radius: 20px;
+    color: white;
+}
+
+button {
+    background: #FFD700;
+    color: black;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ffaa00;
+}
+
+.rankings {
+    background: #111;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 30px;
+    border: 1px solid #333;
+}
+
+.rankings h2 {
+    color: #FFD700;
+    margin-top: 0;
+}
+
+.rankings ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.rankings li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.chart-container {
+    background: #0a0a0a;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.note {
+    color: #aaa;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-msg {
+    color: #ff6b6b;
+    background: #1a0000;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 20px 0;
+    text-align: center;
+    border-left: 4px solid #ff6b6b;
+}
+/* Artist selection inputs */
+.artist-selector {
+    background: #111;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+}
+.artist-input-group {
+    flex: 1;
+    min-width: 180px;
+}
+.artist-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+.artist-input-group input {
+    width: 100%;
+    padding: 8px;
+    background: #222;
+    border: 1px solid #555;
+    border-radius: 20px;
+    color: white;
+}
+.error-msg-small {
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+.selected-scores {
+    background: #111;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #333;
+}
+.selected-scores h3 {
+    color: #FFD700;
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+.selected-scores ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.selected-scores li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    background: #222;
+    padding: 5px 15px;
+    border-radius: 40px;
+}

@@ -1,0 +1,154 @@
+/* ================================================================
+   sankey.css – Styles for the Sankey diagram page (genres & artists)
+   All rules are scoped under #sankey-view because the content is
+   dynamically loaded into that div by tabs.js.
+   ================================================================ */
+
+/* Global reset (only affects the Sankey view) */
+#sankey-view * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+#sankey-view {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    background: black;
+    padding: 0;
+}
+
+#sankey-view .container {
+    max-width: 1700px;
+    margin: 0 auto;
+    background: black;
+    border-radius: 20px;
+    padding: 20px 30px 30px;
+    position: relative;
+}
+
+/* Title – absolutely positioned to overlay the diagram (custom layout) */
+#sankey-view h1 {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #FFD700;
+    width: auto;
+    text-align: left;
+    z-index: 10;
+}
+
+/* Subtitle (unused, kept for possible future use) */
+#sankey-view .subtitle {
+    text-align: center;
+    color: #6b6b6b;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+/* Dropdown control bar */
+#sankey-view .controls {
+    text-align: center;
+    margin-bottom: 25px;
+    background: black;
+}
+#sankey-view .controls label {
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: white;
+}
+#sankey-view #viewSelector {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    background: #fefcf8;
+    cursor: pointer;
+    outline: none;
+}
+#sankey-view #viewSelector:hover {
+    background: #fff6e8;
+}
+
+/* Container for the SVG – overflow‑x allows horizontal scroll if needed */
+#sankey-view #sankey-container {
+    position: relative;    /* avoid absolute positioning conflict */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-radius: 16px;
+    padding: 10px;
+    min-height: 200px;
+    overflow-x: auto;
+}
+
+/* SVG itself – background transparent (inherits black from container) */
+#sankey-view svg {
+    background: transparent;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sankey nodes (rectangles) */
+#sankey-view .node rect {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+/* Node labels – white text for visibility on black background */
+#sankey-view .node text {
+    font-size: 11px;
+    font-weight: 500;
+    fill: white;
+}
+
+/* Links (flows) – semi‑transparent, highlight on hover */
+#sankey-view .link {
+    fill: none;
+    stroke-opacity: 0.6;
+    transition: stroke-opacity 0.2s;
+}
+#sankey-view .link:hover {
+    stroke-opacity: 0.9;
+}
+
+/* Tooltip – appears on node/link hover */
+#sankey-view .tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.85);
+    color: #f0f0f0;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+    font-family: monospace;
+    border-left: 3px solid #2c5f2d;
+    white-space: nowrap;
+}
+
+/* Optional footer (not shown in current HTML, kept for future) */
+#sankey-view .footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 700px) {
+    #sankey-view .container { padding: 15px; }
+    #sankey-view #sankey-container { padding: 10px; }
+    #sankey-view .footer { flex-direction: column; gap: 5px; }
+}

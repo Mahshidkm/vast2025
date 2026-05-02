@@ -1,0 +1,1254 @@
+{
+  "nodes": [
+    {
+      "id": "sailor",
+      "type": "sailor"
+    },
+    {
+      "id": "Jun Zhou",
+      "type": "influencer"
+    },
+    {
+      "id": "Min Long",
+      "type": "influencer"
+    },
+    {
+      "id": "Gang Shao",
+      "type": "influencer"
+    },
+    {
+      "id": "Qiang Yuan",
+      "type": "influencer"
+    },
+    {
+      "id": "Juan Zhou",
+      "type": "influencer"
+    },
+    {
+      "id": "Yang Zhao",
+      "type": "influencer"
+    },
+    {
+      "id": "Wei Zhao",
+      "type": "influencer"
+    },
+    {
+      "id": "Yang Peng",
+      "type": "influencer"
+    },
+    {
+      "id": "Min Cao",
+      "type": "influencer"
+    },
+    {
+      "id": "Juan Shi",
+      "type": "influencer"
+    },
+    {
+      "id": "Ming Zhou",
+      "type": "influencer"
+    },
+    {
+      "id": "Yang Wan",
+      "type": "influencer"
+    },
+    {
+      "id": "Jeremiah Love",
+      "type": "influencer"
+    },
+    {
+      "id": "Zachary Francis",
+      "type": "influencer"
+    },
+    {
+      "id": "Robert Woods",
+      "type": "influencer"
+    },
+    {
+      "id": "Igor Dy\u015b",
+      "type": "influencer"
+    },
+    {
+      "id": "Tao Wen",
+      "type": "influencer"
+    },
+    {
+      "id": "Guiying Ren",
+      "type": "influencer"
+    },
+    {
+      "id": "Lei Shi",
+      "type": "influencer"
+    },
+    {
+      "id": "Wei Liang",
+      "type": "influencer"
+    },
+    {
+      "id": "Ping Jin",
+      "type": "influencer"
+    },
+    {
+      "id": "Shannon Harvey",
+      "type": "influencer"
+    },
+    {
+      "id": "Ming Ren",
+      "type": "influencer"
+    },
+    {
+      "id": "Lei Fu",
+      "type": "influencer"
+    },
+    {
+      "id": "Yan Dai",
+      "type": "influencer"
+    },
+    {
+      "id": "Daniel Mccormick",
+      "type": "influencer"
+    },
+    {
+      "id": "Lei Jin",
+      "type": "influencer"
+    },
+    {
+      "id": "Lori Massey",
+      "type": "influencer"
+    },
+    {
+      "id": "Brooke Olson",
+      "type": "influencer"
+    },
+    {
+      "id": "Tao Hu",
+      "type": "influencer"
+    },
+    {
+      "id": "Na Ye",
+      "type": "influencer"
+    },
+    {
+      "id": "Ming Qiao",
+      "type": "influencer"
+    },
+    {
+      "id": "Elizabeth Willis",
+      "type": "influencer"
+    },
+    {
+      "id": "Urszula Stochmal",
+      "type": "influencer"
+    },
+    {
+      "id": "Joshua Taylor",
+      "type": "influencer"
+    },
+    {
+      "id": "John Graves",
+      "type": "influencer"
+    },
+    {
+      "id": "Debra Graham",
+      "type": "influencer"
+    },
+    {
+      "id": "Michael Nixon",
+      "type": "influencer"
+    },
+    {
+      "id": "Simone S\u00e4uberlich",
+      "type": "influencer"
+    },
+    {
+      "id": "Belinda Knappe",
+      "type": "influencer"
+    },
+    {
+      "id": "Miss Jennifer Williams",
+      "type": "influencer"
+    },
+    {
+      "id": "William Robinson",
+      "type": "influencer"
+    },
+    {
+      "id": "Judy Yang",
+      "type": "influencer"
+    },
+    {
+      "id": "Joanna Avery",
+      "type": "influencer"
+    },
+    {
+      "id": "Molly Gonzalez",
+      "type": "influencer"
+    },
+    {
+      "id": "Trevor Bass",
+      "type": "influencer"
+    },
+    {
+      "id": "Xiuying Du",
+      "type": "influencer"
+    },
+    {
+      "id": "Xia Yuan",
+      "type": "influencer"
+    },
+    {
+      "id": "Sandra Burke",
+      "type": "influencer"
+    },
+    {
+      "id": "Yan Li",
+      "type": "influencer"
+    },
+    {
+      "id": "Ping Liao",
+      "type": "influencer"
+    },
+    {
+      "id": "Ming Long",
+      "type": "influencer"
+    },
+    {
+      "id": "Kimberly Estrada",
+      "type": "influencer"
+    },
+    {
+      "id": "Fang Ding",
+      "type": "influencer"
+    },
+    {
+      "id": "Yong Lu",
+      "type": "influencer"
+    },
+    {
+      "id": "Joseph Ponce",
+      "type": "influencer"
+    },
+    {
+      "id": "Herbert Mcfarland",
+      "type": "influencer"
+    },
+    {
+      "id": "Rachel Montes",
+      "type": "influencer"
+    },
+    {
+      "id": "Rebecca Wise",
+      "type": "influencer"
+    },
+    {
+      "id": "Caitlin Miller",
+      "type": "influencer"
+    },
+    {
+      "id": "Jing Kang",
+      "type": "influencer"
+    },
+    {
+      "id": "Qiang Zhou",
+      "type": "influencer"
+    },
+    {
+      "id": "Yong Dong",
+      "type": "influencer"
+    },
+    {
+      "id": "Xiulan Fang",
+      "type": "influencer"
+    },
+    {
+      "id": "Qiang Liu",
+      "type": "influencer"
+    },
+    {
+      "id": "Jun Qiao",
+      "type": "influencer"
+    },
+    {
+      "id": "Ming Huang",
+      "type": "influencer"
+    },
+    {
+      "id": "Yan Tang",
+      "type": "influencer"
+    },
+    {
+      "id": "Tao Gao",
+      "type": "influencer"
+    },
+    {
+      "id": "David Reese",
+      "type": "influencer"
+    },
+    {
+      "id": "Ryan Dunlap",
+      "type": "influencer"
+    },
+    {
+      "id": "Elmo Calbo",
+      "type": "influencer"
+    },
+    {
+      "id": "Amico Luciani",
+      "type": "influencer"
+    },
+    {
+      "id": "Cipriano Peranda",
+      "type": "influencer"
+    },
+    {
+      "id": "Naoko Sato",
+      "type": "influencer"
+    },
+    {
+      "id": "Kaori Ito",
+      "type": "influencer"
+    },
+    {
+      "id": "Yoko Hashimoto",
+      "type": "influencer"
+    }
+  ],
+  "links": [
+    {
+      "source": "Jun Zhou",
+      "target": "sailor",
+      "year": "2030",
+      "role": "PerformerOf",
+      "work_inluencer": 3881,
+      "sailor_work": 17273,
+      "score": 1.0
+    },
+    {
+      "source": "Min Long",
+      "target": "sailor",
+      "year": "2030",
+      "role": "LyricistOf",
+      "work_inluencer": 3881,
+      "sailor_work": 17273,
+      "score": 1.0
+    },
+    {
+      "source": "Min Long",
+      "target": "sailor",
+      "year": "2030",
+      "role": "PerformerOf",
+      "work_inluencer": 3881,
+      "sailor_work": 17273,
+      "score": 1.0
+    },
+    {
+      "source": "Gang Shao",
+      "target": "sailor",
+      "year": "2030",
+      "role": "LyricistOf",
+      "work_inluencer": 3881,
+      "sailor_work": 17273,
+      "score": 1.0
+    },
+    {
+      "source": "Gang Shao",
+      "target": "sailor",
+      "year": "2030",
+      "role": "PerformerOf",
+      "work_inluencer": 3881,
+      "sailor_work": 17273,
+      "score": 1.0
+    },
+    {
+      "source": "Qiang Yuan",
+      "target": "sailor",
+      "year": "2030",
+      "role": "PerformerOf",
+      "work_inluencer": 3881,
+      "sailor_work": 17273,
+      "score": 1.0
+    },
+    {
+      "source": "Juan Zhou",
+      "target": "sailor",
+      "year": "2030",
+      "role": "PerformerOf",
+      "work_inluencer": 3881,
+      "sailor_work": 17273,
+      "score": 1.0
+    },
+    {
+      "source": "Yang Zhao",
+      "target": "sailor",
+      "year": "2030",
+      "role": "PerformerOf",
+      "work_inluencer": 3881,
+      "sailor_work": 17273,
+      "score": 1.0
+    },
+    {
+      "source": "Wei Zhao",
+      "target": "sailor",
+      "year": "2030",
+      "role": "ProducerOf",
+      "work_inluencer": 3881,
+      "sailor_work": 17273,
+      "score": 0.5
+    },
+    {
+      "source": "Wei Zhao",
+      "target": "sailor",
+      "year": "2030",
+      "role": "PerformerOf",
+      "work_inluencer": 3881,
+      "sailor_work": 17273,
+      "score": 1.0
+    },
+    {
+      "source": "Yang Peng",
+      "target": "sailor",
+      "year": "2034",
+      "role": "PerformerOf",
+      "work_inluencer": 15855,
+      "sailor_work": 17275,
+      "score": 1.0
+    },
+    {
+      "source": "Yang Peng",
+      "target": "sailor",
+      "year": "2034",
+      "role": "ProducerOf",
+      "work_inluencer": 15855,
+      "sailor_work": 17275,
+      "score": 0.5
+    },
+    {
+      "source": "Min Cao",
+      "target": "sailor",
+      "year": "2034",
+      "role": "PerformerOf",
+      "work_inluencer": 15855,
+      "sailor_work": 17275,
+      "score": 1.0
+    },
+    {
+      "source": "Juan Shi",
+      "target": "sailor",
+      "year": "2034",
+      "role": "PerformerOf",
+      "work_inluencer": 15855,
+      "sailor_work": 17275,
+      "score": 1.0
+    },
+    {
+      "source": "Ming Zhou",
+      "target": "sailor",
+      "year": "2034",
+      "role": "PerformerOf",
+      "work_inluencer": 15855,
+      "sailor_work": 17275,
+      "score": 1.0
+    },
+    {
+      "source": "Yang Wan",
+      "target": "sailor",
+      "year": "2034",
+      "role": "ComposerOf",
+      "work_inluencer": 15855,
+      "sailor_work": 17275,
+      "score": 0.5
+    },
+    {
+      "source": "Jeremiah Love",
+      "target": "sailor",
+      "year": "2028",
+      "role": "ProducerOf",
+      "work_inluencer": 10534,
+      "sailor_work": 17280,
+      "score": 0.5
+    },
+    {
+      "source": "Jeremiah Love",
+      "target": "sailor",
+      "year": "2028",
+      "role": "PerformerOf",
+      "work_inluencer": 10534,
+      "sailor_work": 17280,
+      "score": 1.0
+    },
+    {
+      "source": "Zachary Francis",
+      "target": "sailor",
+      "year": "2028",
+      "role": "PerformerOf",
+      "work_inluencer": 10534,
+      "sailor_work": 17280,
+      "score": 1.0
+    },
+    {
+      "source": "Robert Woods",
+      "target": "sailor",
+      "year": "2028",
+      "role": "PerformerOf",
+      "work_inluencer": 10534,
+      "sailor_work": 17280,
+      "score": 1.0
+    },
+    {
+      "source": "Robert Woods",
+      "target": "sailor",
+      "year": "2028",
+      "role": "LyricistOf",
+      "work_inluencer": 10534,
+      "sailor_work": 17280,
+      "score": 0.5
+    },
+    {
+      "source": "Igor Dy\u015b",
+      "target": "sailor",
+      "year": "2030",
+      "role": "PerformerOf",
+      "work_inluencer": 8207,
+      "sailor_work": 17285,
+      "score": 1.0
+    },
+    {
+      "source": "Igor Dy\u015b",
+      "target": "sailor",
+      "year": "2030",
+      "role": "LyricistOf",
+      "work_inluencer": 8207,
+      "sailor_work": 17285,
+      "score": 0.5
+    },
+    {
+      "source": "Tao Wen",
+      "target": "sailor",
+      "year": "2032",
+      "role": "PerformerOf",
+      "work_inluencer": 10903,
+      "sailor_work": 17286,
+      "score": 1.0
+    },
+    {
+      "source": "Tao Wen",
+      "target": "sailor",
+      "year": "2032",
+      "role": "ProducerOf",
+      "work_inluencer": 10903,
+      "sailor_work": 17286,
+      "score": 0.5
+    },
+    {
+      "source": "Guiying Ren",
+      "target": "sailor",
+      "year": "2032",
+      "role": "PerformerOf",
+      "work_inluencer": 10903,
+      "sailor_work": 17286,
+      "score": 1.0
+    },
+    {
+      "source": "Lei Shi",
+      "target": "sailor",
+      "year": "2032",
+      "role": "PerformerOf",
+      "work_inluencer": 10903,
+      "sailor_work": 17286,
+      "score": 1.0
+    },
+    {
+      "source": "Wei Liang",
+      "target": "sailor",
+      "year": "2032",
+      "role": "PerformerOf",
+      "work_inluencer": 10903,
+      "sailor_work": 17286,
+      "score": 1.0
+    },
+    {
+      "source": "Wei Liang",
+      "target": "sailor",
+      "year": "2032",
+      "role": "ComposerOf",
+      "work_inluencer": 10903,
+      "sailor_work": 17286,
+      "score": 0.5
+    },
+    {
+      "source": "Ping Jin",
+      "target": "sailor",
+      "year": "2032",
+      "role": "LyricistOf",
+      "work_inluencer": 10903,
+      "sailor_work": 17286,
+      "score": 0.5
+    },
+    {
+      "source": "Shannon Harvey",
+      "target": "sailor",
+      "year": "2034",
+      "role": "LyricistOf",
+      "work_inluencer": 5574,
+      "sailor_work": 17289,
+      "score": 0.5
+    },
+    {
+      "source": "Shannon Harvey",
+      "target": "sailor",
+      "year": "2034",
+      "role": "PerformerOf",
+      "work_inluencer": 5574,
+      "sailor_work": 17289,
+      "score": 1.0
+    },
+    {
+      "source": "Shannon Harvey",
+      "target": "sailor",
+      "year": "2034",
+      "role": "ComposerOf",
+      "work_inluencer": 5574,
+      "sailor_work": 17289,
+      "score": 0.5
+    },
+    {
+      "source": "Ming Ren",
+      "target": "sailor",
+      "year": "2036",
+      "role": "PerformerOf",
+      "work_inluencer": 12237,
+      "sailor_work": 17290,
+      "score": 1.0
+    },
+    {
+      "source": "Lei Fu",
+      "target": "sailor",
+      "year": "2036",
+      "role": "PerformerOf",
+      "work_inluencer": 12237,
+      "sailor_work": 17290,
+      "score": 1.0
+    },
+    {
+      "source": "Lei Fu",
+      "target": "sailor",
+      "year": "2036",
+      "role": "ProducerOf",
+      "work_inluencer": 12237,
+      "sailor_work": 17290,
+      "score": 0.5
+    },
+    {
+      "source": "Yan Dai",
+      "target": "sailor",
+      "year": "2036",
+      "role": "PerformerOf",
+      "work_inluencer": 12237,
+      "sailor_work": 17290,
+      "score": 1.0
+    },
+    {
+      "source": "Yan Dai",
+      "target": "sailor",
+      "year": "2036",
+      "role": "LyricistOf",
+      "work_inluencer": 12237,
+      "sailor_work": 17290,
+      "score": 0.5
+    },
+    {
+      "source": "Daniel Mccormick",
+      "target": "sailor",
+      "year": "2036",
+      "role": "PerformerOf",
+      "work_inluencer": 12237,
+      "sailor_work": 17290,
+      "score": 1.0
+    },
+    {
+      "source": "Lei Jin",
+      "target": "sailor",
+      "year": "2036",
+      "role": "PerformerOf",
+      "work_inluencer": 12237,
+      "sailor_work": 17290,
+      "score": 1.0
+    },
+    {
+      "source": "Lori Massey",
+      "target": "sailor",
+      "year": "2038",
+      "role": "LyricistOf",
+      "work_inluencer": 6592,
+      "sailor_work": 17292,
+      "score": 0.5
+    },
+    {
+      "source": "Lori Massey",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 6592,
+      "sailor_work": 17292,
+      "score": 1.0
+    },
+    {
+      "source": "Brooke Olson",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 14107,
+      "sailor_work": 17049,
+      "score": 0.5
+    },
+    {
+      "source": "Tao Hu",
+      "target": "sailor",
+      "year": "2038",
+      "role": "ComposerOf",
+      "work_inluencer": 14107,
+      "sailor_work": 17049,
+      "score": 0.5
+    },
+    {
+      "source": "Tao Hu",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 14107,
+      "sailor_work": 17049,
+      "score": 0.5
+    },
+    {
+      "source": "Na Ye",
+      "target": "sailor",
+      "year": "2029",
+      "role": "ProducerOf",
+      "work_inluencer": 14296,
+      "sailor_work": 17231,
+      "score": 0.5
+    },
+    {
+      "source": "Na Ye",
+      "target": "sailor",
+      "year": "2029",
+      "role": "PerformerOf",
+      "work_inluencer": 14296,
+      "sailor_work": 17231,
+      "score": 0.5
+    },
+    {
+      "source": "Ming Qiao",
+      "target": "sailor",
+      "year": "2029",
+      "role": "LyricistOf",
+      "work_inluencer": 14296,
+      "sailor_work": 17231,
+      "score": 1.0
+    },
+    {
+      "source": "Elizabeth Willis",
+      "target": "sailor",
+      "year": "2026",
+      "role": "LyricistOf",
+      "work_inluencer": 16209,
+      "sailor_work": 17270,
+      "score": 0.5
+    },
+    {
+      "source": "Elizabeth Willis",
+      "target": "sailor",
+      "year": "2026",
+      "role": "PerformerOf",
+      "work_inluencer": 16209,
+      "sailor_work": 17270,
+      "score": 1.0
+    },
+    {
+      "source": "Urszula Stochmal",
+      "target": "sailor",
+      "year": "2028",
+      "role": "ComposerOf",
+      "work_inluencer": 14658,
+      "sailor_work": 17279,
+      "score": 0.5
+    },
+    {
+      "source": "Joshua Taylor",
+      "target": "sailor",
+      "year": "2034",
+      "role": "ComposerOf",
+      "work_inluencer": 11254,
+      "sailor_work": 17287,
+      "score": 0.5
+    },
+    {
+      "source": "John Graves",
+      "target": "sailor",
+      "year": "2038",
+      "role": "ComposerOf",
+      "work_inluencer": 7026,
+      "sailor_work": 17049,
+      "score": 0.5
+    },
+    {
+      "source": "Debra Graham",
+      "target": "sailor",
+      "year": "2029",
+      "role": "ComposerOf",
+      "work_inluencer": 14352,
+      "sailor_work": 17231,
+      "score": 0.5
+    },
+    {
+      "source": "Michael Nixon",
+      "target": "sailor",
+      "year": "2029",
+      "role": "ComposerOf",
+      "work_inluencer": 14352,
+      "sailor_work": 17231,
+      "score": 0.5
+    },
+    {
+      "source": "Simone S\u00e4uberlich",
+      "target": "sailor",
+      "year": "2034",
+      "role": "ComposerOf",
+      "work_inluencer": 16312,
+      "sailor_work": 17275,
+      "score": 0.5
+    },
+    {
+      "source": "Simone S\u00e4uberlich",
+      "target": "sailor",
+      "year": "2034",
+      "role": "PerformerOf",
+      "work_inluencer": 16312,
+      "sailor_work": 17275,
+      "score": 1.0
+    },
+    {
+      "source": "Belinda Knappe",
+      "target": "sailor",
+      "year": "2034",
+      "role": "ProducerOf",
+      "work_inluencer": 16312,
+      "sailor_work": 17275,
+      "score": 0.5
+    },
+    {
+      "source": "Miss Jennifer Williams",
+      "target": "sailor",
+      "year": "2028",
+      "role": "PerformerOf",
+      "work_inluencer": 14933,
+      "sailor_work": 17280,
+      "score": 1.0
+    },
+    {
+      "source": "William Robinson",
+      "target": "sailor",
+      "year": "2028",
+      "role": "ProducerOf",
+      "work_inluencer": 14933,
+      "sailor_work": 17280,
+      "score": 0.5
+    },
+    {
+      "source": "William Robinson",
+      "target": "sailor",
+      "year": "2028",
+      "role": "PerformerOf",
+      "work_inluencer": 14933,
+      "sailor_work": 17280,
+      "score": 1.0
+    },
+    {
+      "source": "Judy Yang",
+      "target": "sailor",
+      "year": "2028",
+      "role": "PerformerOf",
+      "work_inluencer": 14933,
+      "sailor_work": 17280,
+      "score": 1.0
+    },
+    {
+      "source": "Joanna Avery",
+      "target": "sailor",
+      "year": "2028",
+      "role": "PerformerOf",
+      "work_inluencer": 14933,
+      "sailor_work": 17280,
+      "score": 1.0
+    },
+    {
+      "source": "Molly Gonzalez",
+      "target": "sailor",
+      "year": "2028",
+      "role": "PerformerOf",
+      "work_inluencer": 14933,
+      "sailor_work": 17280,
+      "score": 1.0
+    },
+    {
+      "source": "Trevor Bass",
+      "target": "sailor",
+      "year": "2031",
+      "role": "PerformerOf",
+      "work_inluencer": 10016,
+      "sailor_work": 17350,
+      "score": 1.0
+    },
+    {
+      "source": "Xiuying Du",
+      "target": "sailor",
+      "year": "2031",
+      "role": "PerformerOf",
+      "work_inluencer": 10016,
+      "sailor_work": 17350,
+      "score": 1.0
+    },
+    {
+      "source": "Xia Yuan",
+      "target": "sailor",
+      "year": "2031",
+      "role": "PerformerOf",
+      "work_inluencer": 10016,
+      "sailor_work": 17350,
+      "score": 1.0
+    },
+    {
+      "source": "Sandra Burke",
+      "target": "sailor",
+      "year": "2031",
+      "role": "PerformerOf",
+      "work_inluencer": 10016,
+      "sailor_work": 17350,
+      "score": 1.0
+    },
+    {
+      "source": "Yan Li",
+      "target": "sailor",
+      "year": "2031",
+      "role": "ComposerOf",
+      "work_inluencer": 10016,
+      "sailor_work": 17350,
+      "score": 0.5
+    },
+    {
+      "source": "Yan Li",
+      "target": "sailor",
+      "year": "2031",
+      "role": "PerformerOf",
+      "work_inluencer": 10016,
+      "sailor_work": 17350,
+      "score": 1.0
+    },
+    {
+      "source": "Ping Liao",
+      "target": "sailor",
+      "year": "2031",
+      "role": "LyricistOf",
+      "work_inluencer": 10016,
+      "sailor_work": 17350,
+      "score": 1.0
+    },
+    {
+      "source": "Ming Long",
+      "target": "sailor",
+      "year": "2033",
+      "role": "PerformerOf",
+      "work_inluencer": 14893,
+      "sailor_work": 16999,
+      "score": 0.5
+    },
+    {
+      "source": "Ming Long",
+      "target": "sailor",
+      "year": "2033",
+      "role": "ProducerOf",
+      "work_inluencer": 14893,
+      "sailor_work": 16999,
+      "score": 0.5
+    },
+    {
+      "source": "Kimberly Estrada",
+      "target": "sailor",
+      "year": "2033",
+      "role": "PerformerOf",
+      "work_inluencer": 14893,
+      "sailor_work": 16999,
+      "score": 0.5
+    },
+    {
+      "source": "Fang Ding",
+      "target": "sailor",
+      "year": "2033",
+      "role": "PerformerOf",
+      "work_inluencer": 14893,
+      "sailor_work": 16999,
+      "score": 0.5
+    },
+    {
+      "source": "Yong Lu",
+      "target": "sailor",
+      "year": "2033",
+      "role": "PerformerOf",
+      "work_inluencer": 14893,
+      "sailor_work": 16999,
+      "score": 0.5
+    },
+    {
+      "source": "Yong Lu",
+      "target": "sailor",
+      "year": "2033",
+      "role": "LyricistOf",
+      "work_inluencer": 14893,
+      "sailor_work": 16999,
+      "score": 1.0
+    },
+    {
+      "source": "Joseph Ponce",
+      "target": "sailor",
+      "year": "2024",
+      "role": "PerformerOf",
+      "work_inluencer": 9223,
+      "sailor_work": 17261,
+      "score": 1.0
+    },
+    {
+      "source": "Herbert Mcfarland",
+      "target": "sailor",
+      "year": "2024",
+      "role": "PerformerOf",
+      "work_inluencer": 9223,
+      "sailor_work": 17261,
+      "score": 1.0
+    },
+    {
+      "source": "Rachel Montes",
+      "target": "sailor",
+      "year": "2024",
+      "role": "PerformerOf",
+      "work_inluencer": 9223,
+      "sailor_work": 17261,
+      "score": 1.0
+    },
+    {
+      "source": "Rebecca Wise",
+      "target": "sailor",
+      "year": "2024",
+      "role": "PerformerOf",
+      "work_inluencer": 9223,
+      "sailor_work": 17261,
+      "score": 1.0
+    },
+    {
+      "source": "Caitlin Miller",
+      "target": "sailor",
+      "year": "2024",
+      "role": "LyricistOf",
+      "work_inluencer": 9223,
+      "sailor_work": 17261,
+      "score": 1.0
+    },
+    {
+      "source": "Jing Kang",
+      "target": "sailor",
+      "year": "2038",
+      "role": "ProducerOf",
+      "work_inluencer": 876,
+      "sailor_work": 17277,
+      "score": 0.5
+    },
+    {
+      "source": "Jing Kang",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 876,
+      "sailor_work": 17277,
+      "score": 1.0
+    },
+    {
+      "source": "Qiang Zhou",
+      "target": "sailor",
+      "year": "2038",
+      "role": "ComposerOf",
+      "work_inluencer": 876,
+      "sailor_work": 17277,
+      "score": 0.5
+    },
+    {
+      "source": "Yong Dong",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 3986,
+      "sailor_work": 17277,
+      "score": 1.0
+    },
+    {
+      "source": "Xiulan Fang",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 3986,
+      "sailor_work": 17277,
+      "score": 1.0
+    },
+    {
+      "source": "Qiang Liu",
+      "target": "sailor",
+      "year": "2038",
+      "role": "ComposerOf",
+      "work_inluencer": 3986,
+      "sailor_work": 17277,
+      "score": 0.5
+    },
+    {
+      "source": "Qiang Liu",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 3986,
+      "sailor_work": 17277,
+      "score": 1.0
+    },
+    {
+      "source": "Jun Qiao",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 3986,
+      "sailor_work": 17277,
+      "score": 1.0
+    },
+    {
+      "source": "Ming Huang",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 3986,
+      "sailor_work": 17277,
+      "score": 1.0
+    },
+    {
+      "source": "Yan Tang",
+      "target": "sailor",
+      "year": "2038",
+      "role": "ComposerOf",
+      "work_inluencer": 3986,
+      "sailor_work": 17277,
+      "score": 0.5
+    },
+    {
+      "source": "Tao Gao",
+      "target": "sailor",
+      "year": "2034",
+      "role": "PerformerOf",
+      "work_inluencer": 13589,
+      "sailor_work": 17287,
+      "score": 1.0
+    },
+    {
+      "source": "Tao Gao",
+      "target": "sailor",
+      "year": "2034",
+      "role": "ProducerOf",
+      "work_inluencer": 13589,
+      "sailor_work": 17287,
+      "score": 0.5
+    },
+    {
+      "source": "Wei Zhao",
+      "target": "sailor",
+      "year": "2034",
+      "role": "ComposerOf",
+      "work_inluencer": 13589,
+      "sailor_work": 17287,
+      "score": 0.5
+    },
+    {
+      "source": "David Reese",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 13014,
+      "sailor_work": 17292,
+      "score": 1.0
+    },
+    {
+      "source": "Ryan Dunlap",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 13014,
+      "sailor_work": 17292,
+      "score": 1.0
+    },
+    {
+      "source": "Elmo Calbo",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 13014,
+      "sailor_work": 17292,
+      "score": 1.0
+    },
+    {
+      "source": "Amico Luciani",
+      "target": "sailor",
+      "year": "2038",
+      "role": "PerformerOf",
+      "work_inluencer": 13014,
+      "sailor_work": 17292,
+      "score": 1.0
+    },
+    {
+      "source": "Cipriano Peranda",
+      "target": "sailor",
+      "year": "2038",
+      "role": "ComposerOf",
+      "work_inluencer": 13014,
+      "sailor_work": 17292,
+      "score": 0.5
+    },
+    {
+      "source": "Naoko Sato",
+      "target": "sailor",
+      "year": "2024",
+      "role": "LyricistOf",
+      "work_inluencer": 2197,
+      "sailor_work": 17261,
+      "score": 1.0
+    },
+    {
+      "source": "Naoko Sato",
+      "target": "sailor",
+      "year": "2024",
+      "role": "PerformerOf",
+      "work_inluencer": 2197,
+      "sailor_work": 17261,
+      "score": 1.0
+    },
+    {
+      "source": "Kaori Ito",
+      "target": "sailor",
+      "year": "2024",
+      "role": "ComposerOf",
+      "work_inluencer": 2197,
+      "sailor_work": 17261,
+      "score": 0.5
+    },
+    {
+      "source": "Yoko Hashimoto",
+      "target": "sailor",
+      "year": "2024",
+      "role": "ProducerOf",
+      "work_inluencer": 2197,
+      "sailor_work": 17261,
+      "score": 0.5
+    }
+  ]
+}

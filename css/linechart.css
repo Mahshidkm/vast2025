@@ -1,0 +1,146 @@
+/* ================================================================
+   linechart.css – Styles for the Oceanus Trends page (dynamically loaded)
+   All rules are scoped under .linechart-page to avoid conflicts with the main network page.
+   ================================================================ */
+
+/* Make the wrapper fill the available width and allow overflow */
+.linechart-page {
+    width: 100%;
+    overflow: visible;
+}
+
+/* The main content container */
+.linechart-page .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: black;
+    border-radius: 20px;
+    padding: 0 0 0 0;          /* no extra padding (managed by inner elements) */
+    overflow: visible;
+}
+
+/* Main title – positioned relative to move it up and left (custom alignment) */
+.linechart-page h1 {
+    color: #FFD700;
+    text-align: left;
+    font-size: 1.4rem;
+    position: relative;
+    top: -40px;                /* shift upward */
+    left: -40px;               /* shift left */
+    margin-bottom: 0;
+}
+
+/* Subtitle – kept centered under the title */
+.linechart-page .subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-top: 30px;
+    position: relative;
+    top: 0;
+}
+
+/* Container for the line chart SVG – flex to centre it */
+.linechart-page #line-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -30px;         /* pull the chart up slightly */
+}
+
+/* The SVG itself – black background, rounded corners, auto margins */
+.linechart-page #line-chart svg {
+    display: block;
+    margin: 0 auto;
+    background: black;
+    border-radius: 12px;
+}
+
+/* Tooltip for the line chart (data points) */
+.linechart-tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.95);
+    color: #f0ebe0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: 12px;
+    font-family: monospace;
+    border-left: 3px solid #FFD700;
+    z-index: 1000;
+}
+
+/* Checkbox controls (toggle lines on/off) – centred row */
+.linechart-page .linechart-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+.linechart-page .linechart-controls-inner {
+    display: inline-flex;
+    gap: 20px;
+    padding: 8px 20px;
+    background: #111;
+    border-radius: 40px;
+    align-items: center;
+}
+.linechart-page .linechart-controls-inner label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+.linechart-page .linechart-controls-inner input[type="checkbox"] {
+    cursor: pointer;
+}
+.linechart-page .linechart-controls-inner span:first-of-type {
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+/* Legend (static, below the checkboxes) – centred row */
+.linechart-page .legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    background: #1a1a1a;
+    padding: 8px 20px;
+    border-radius: 30px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.linechart-page .legend span {
+    width: 20px;
+    height: 3px;
+    border-radius: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.linechart-page .legend div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive adjustments for narrow screens */
+@media (max-width: 900px) {
+    .linechart-page .legend {
+        gap: 15px;
+        flex-wrap: wrap;
+        padding: 8px 15px;
+    }
+    .linechart-page .linechart-controls-inner {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
