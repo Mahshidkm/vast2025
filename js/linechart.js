@@ -8,7 +8,7 @@
  */
 
 // Load the data and initialise the chart
-d3.json("../data/oceanus_trends.json")
+d3.json("/vast2025/data/oceanus_trends.json")
     .then(data => {
         const years = data.years;
         const allData = data.all_oceanus;
