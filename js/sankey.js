@@ -6,7 +6,7 @@
  */
 
 // Load the data and initialise
-d3.json("../data/data_task2-2.json")
+d3.json("vast2025/data/data_task2-2.json")
     .then(data => {
         console.log("Data loaded:", data);
         if (!data.source_genre) {
