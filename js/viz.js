@@ -438,15 +438,23 @@ Promise.all([
                 .attr("x2", end.x).attr("y2", end.y).attr("marker-end", "url(#arrowPurple)");
         });
 
+        // RIGHT LINKS – arrow ends at the displayed circle edge (including extra thickness for top artists)
         rightLinks.forEach(link => {
             if (link.year !== year) return;
             const targetNode = nodes.find(n => n.id === link.target);
             if (!targetNode || targetNode.firstYear > year) return;
             if (targetNode.type === "collaborator" || targetNode.type === "influenced") {
                 let val = targetNode.type === "collaborator" ? getRightCumulativeUniqueWorks(link.target, year) : getRightCumulativeScore(link.target, year);
-                const targetRadius = val > 0 ? globalRadiusScale(val) : minRadius;
+                let baseRadius = val > 0 ? globalRadiusScale(val) : minRadius;
+                let isTop = false;
+                if (targetNode.type === "collaborator") {
+                    isTop = topCollaborator.has(link.target);
+                } else {
+                    isTop = topInfluenced.has(link.target);
+                }
+                const displayedRadius = isTop ? baseRadius + 2.5 : baseRadius;
                 const start = pointOnCircle(sailorNode.x, sailorNode.y, sailorRadius, targetNode.x, targetNode.y);
-                const end = pointOnCircle(targetNode.x, targetNode.y, targetRadius, sailorNode.x, sailorNode.y);
+                const end = pointOnCircle(targetNode.x, targetNode.y, displayedRadius, sailorNode.x, sailorNode.y);
                 const edgeColor = targetNode.type === "collaborator" ? activeCollaboratorColor : activeInfluencedColor;
                 const arrowId = targetNode.type === "collaborator" ? "url(#arrowCyan)" : "url(#arrowCoral)";
                 linkGroup.append("line").attr("class", "link").attr("stroke-width", constantBranchThickness)
