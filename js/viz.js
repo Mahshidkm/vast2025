@@ -464,7 +464,7 @@ Promise.all([
     if (slider) {
         slider.min = globalYearMin;
         slider.max = globalYearMax;
-        slider.value = globalYearMin;
+        slider.value = globalYearMax;
         yearLabel.innerText = globalYearMin;
         slider.addEventListener("input", () => {
             const y = parseInt(slider.value);
@@ -476,7 +476,7 @@ Promise.all([
                 renderAllCumulativeLineChart(y);
             }
         });
-        updateNetwork(globalYearMin);
+        updateNetwork(globalYearMax);
     } else {
         console.error("Year slider element not found!");
     }
