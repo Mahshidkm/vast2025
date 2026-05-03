@@ -4,33 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sankey: Oceanus Folk Influences</title>
-    <!-- Sankey‑specific styles -->
     <link rel="stylesheet" href="../css/sankey.css">
-    <!-- D3 and D3‑Sankey libraries -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Main title (dynamically positioned via CSS) -->
-        <h1>What genres and artists were influenced by Oceanus Folk?</h1>
-        <!-- Dropdown to switch between genre and artist view -->
-        <div class="controls">
-            <label for="viewSelector">Show: </label>
-            <select id="viewSelector">
-                <option value="genres">Genres</option>
-                <option value="artists">Artists</option>
-            </select>
-        </div>
-
-        <!-- The Sankey diagram will be drawn inside this container -->
-        <div id="sankey-container"></div>
-
-        <!-- Tooltip (hidden by default, shown on hover) -->
-        <div class="tooltip"></div>
+<div class="container">
+    <h1>What genres and artists were influenced by Oceanus Folk?What genres influenced Oceanus Folk?</h1>
+    <div class="controls">
+        <label for="viewSelector">Show: </label>
+        <select id="viewSelector">
+            <option value="genres_out">Genres influenced by Oceanus Folk</option>
+            <option value="artists_out">Artists influenced by Oceanus Folk</option>
+            <option value="genres_in">Genres that influenced Oceanus Folk (before/after Sailor)</option>
+        </select>
     </div>
-
-    <!-- Chart logic (loaded dynamically by tabs.js) -->
-    <script src="../js/sankey.js"></script>
+    <div id="sankey-container"></div>
+    <div class="tooltip"></div>
+</div>
+<script src="../js/sankey.js"></script>
 </body>
 </html>
