@@ -465,7 +465,7 @@ Promise.all([
         slider.min = globalYearMin;
         slider.max = globalYearMax;
         slider.value = globalYearMax;
-        yearLabel.innerText = globalYearMin;
+        yearLabel.innerText = globalYearMax;
         slider.addEventListener("input", () => {
             const y = parseInt(slider.value);
             yearLabel.innerText = y;
