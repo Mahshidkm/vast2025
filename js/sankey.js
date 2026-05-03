@@ -9,9 +9,9 @@
 
 // Data file mapping
 const dataFiles = {
-    genres_out: "../data/data_task2-2.json",
-    artists_out: "../data/data_task2-2.json",
-    genres_in: "../data/influence_to_oceanus_sankey.json"
+    genres_out: "/vast2025/data/data_task2-2.json",
+    artists_out: "/vast2025/data/data_task2-2.json",
+    genres_in: "/vast2025/data/influence_to_oceanus_sankey.json"
 };
 
 let tooltip;
