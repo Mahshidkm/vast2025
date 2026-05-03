@@ -501,8 +501,7 @@ Promise.all([
         const counts = years.map(y => yearMap.get(y));
         return { years, counts };
     }
-
-    // Default cumulative line chart (all collaborators)
+     // Default cumulative line chart (all collaborators)
     function renderAllCumulativeLineChart(selectedYear) {
         if (!collaboratorData) return;
         const { years, counts } = getAllYearlyCounts();
@@ -515,8 +514,8 @@ Promise.all([
             d3.select("#slope-chart").html(`<p style='color:gray'>No data for years ≤ ${selectedYear}</p>`);
             return;
         }
-        const chartWidth = 540, chartHeight = 700;
-        const margin = { top: 90, right: 40, bottom: 80, left: 35 };
+        const chartWidth = 540, chartHeight = 700;   // increased height
+        const margin = { top: 90, right: 40, bottom: 100, left: 35 }; // increased bottom margin
         const innerW = chartWidth - margin.left - margin.right;
         const innerH = chartHeight - margin.top - margin.bottom;
         const svgChart = d3.select("#slope-chart").html("").append("svg").attr("width", chartWidth).attr("height", chartHeight)
@@ -533,8 +532,25 @@ Promise.all([
         svgChart.selectAll(".tick line").attr("stroke-width", 3.5);
         svgChart.append("text").attr("x", innerW/2).attr("y", innerH + 40).attr("text-anchor", "middle").style("fill", "white").text("Year");
         svgChart.append("text").attr("x", -85).attr("y", 15).attr("text-anchor", "middle").attr("transform", "rotate(-90)").style("fill", "white").text("Cumulative Oceanus Folk Songs");
-        svgChart.append("text").attr("x", innerW/2).attr("y", innerH + 70).attr("text-anchor", "middle").style("fill", "white").style("font-size", "16px").style("font-weight", "bold")
+        
+        // --- Long title (kept) ---
+        svgChart.append("text").attr("x", innerW/2).attr("y", 570).attr("text-anchor", "middle").style("fill", "white").style("font-size", "16px").style("font-weight", "bold")
             .text("Cumulative Songs in Oceanus Folk Genre Before & After Sailor");
+        
+        // --- Legend entry: blue line + "Artists who collaborated with Sailor" ---
+        // Place it at the bottom‑right corner, just above the bottom margin
+        const legendX = innerW - 320;
+        const legendY = innerH + 70;
+        const legendGroup = svgChart.append("g").attr("transform", `translate(${legendX}, ${legendY})`);
+        legendGroup.append("line")
+            .attr("x1", 0).attr("y1", 0).attr("x2", 20).attr("y2", 0)
+            .attr("stroke", "#006C8F").attr("stroke-width", 4);
+        legendGroup.append("text")
+            .attr("x", 25).attr("y", 4).attr("text-anchor", "start")
+            .style("fill", "white").style("font-size", "12px")
+            .text("Artists who collaborated with Sailor");
+        
+        // --- Draw line and vertical marker ---
         const lineGen = d3.line().x((d,i) => xScale(filteredYears[i])).y(d => yScale(d)).curve(d3.curveMonotoneX);
         svgChart.append("path").datum(cumulative).attr("fill", "none").attr("stroke", "#006C8F").attr("stroke-width", 4.5).attr("d", lineGen);
         if (globalYearMin >= filteredYears[0] && globalYearMin <= filteredYears[filteredYears.length-1]) {
