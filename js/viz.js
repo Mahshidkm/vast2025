@@ -178,7 +178,7 @@ Promise.all([
     // 4. Node placement (non‑overlapping circles)
     // ------------------------------------------------------------
     const width = 1000, height = 1000;
-    const centerX = width/2 + 15, centerY = height/2 - 170;
+    const centerX = width/2 - 60, centerY = height/2 - 170;
     const sailorRadius = 40;
     const bigCircleRadius = 320;
     const maxAttempts = 2000;
