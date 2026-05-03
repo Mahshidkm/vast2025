@@ -3,8 +3,10 @@
  * - genres_out: Oceanus Folk → genres (original)
  * - artists_out: Oceanus Folk → artists (original, top 25)
  * - genres_in: Genres → Oceanus Folk (before/after)
- * All use nodeWidth = 80, nodePadding = 25, same fonts and colors.
- * Source nodes in genres_in are ordered by the influence on "after" target.
+ *   - Ordered by total influence to "after Sailor" (descending)
+ *   - Most influential genre (highest after‑Sailor) highlighted in red
+ *   - Target nodes: before = blue, after = red
+ *   - Links with highest flow to before/after are highlighted in gold.
  */
 
 // Data file mapping
@@ -47,9 +49,12 @@ function buildSankey(viewType) {
             // Prepare nodes and links
             // ------------------------------------------------------------
             let nodes, links;
+            let topSource = null;
+            let maxBeforeLink = null;
+            let maxAfterLink = null;
 
             if (viewType === "genres_out" || viewType === "artists_out") {
-                // ----- Original outflow logic -----
+                // ----- Original outflow logic (unchanged) -----
                 const sourceGenre = data.source_genre;
                 let targetItems = (viewType === "genres_out") ? data.genres : data.artists;
                 if (!targetItems) throw new Error(`Missing target data`);
@@ -99,7 +104,7 @@ function buildSankey(viewType) {
                 }));
             }
             else if (viewType === "genres_in") {
-                // ----- Inflow view (before/after) -----
+                // ----- Inflow view (before/after) with ordering by "after" value and red highlighting -----
                 if (!data.nodes || !data.links) throw new Error("Invalid inflow JSON");
                 nodes = data.nodes.map(node => ({ ...node }));
                 links = data.links.map(link => ({ ...link }));
@@ -116,30 +121,50 @@ function buildSankey(viewType) {
                     value: link.value
                 }));
 
-                // Order source nodes by the influence on "Oceanus Folk (after)"
-                const targetName = "Oceanus Folk (after)";
-                const afterNode = nodes.find(n => n.name === targetName);
-                if (!afterNode) {
-                    console.warn("Could not find target node 'Oceanus Folk (after)'");
-                }
-                // Get all source nodes (excluding the two target nodes)
-                const targetNames = ["Oceanus Folk (before)", "Oceanus Folk (after)"];
-                const sourceNodes = nodes.filter(n => !targetNames.includes(n.name));
-                // Compute the flow to the "after" target for each source
-                const afterFlow = new Map();
-                sources: for (let src of sourceNodes) {
-                    const linkToAfter = links.find(l => l.source === src && l.target === afterNode);
-                    afterFlow.set(src, linkToAfter ? linkToAfter.value : 0);
-                }
-                // Sort sources by after flow descending
-                const sortedSources = sourceNodes.sort((a, b) => afterFlow.get(b) - afterFlow.get(a));
-                const targetNodes = nodes.filter(n => targetNames.includes(n.name));
-                nodes = [...sortedSources, ...targetNodes];
+                // Identify target nodes
+                const beforeTarget = nodes.find(n => n.name === "Oceanus Folk (before)");
+                const afterTarget = nodes.find(n => n.name === "Oceanus Folk (after)");
+                if (!beforeTarget || !afterTarget) throw new Error("Target nodes not found");
+
+                // Compute for each source node: total value to "after" target
+                const sourceAfterMap = new Map();
+                links.forEach(link => {
+                    if (link.target === afterTarget) {
+                        sourceAfterMap.set(link.source, (sourceAfterMap.get(link.source) || 0) + link.value);
+                    }
+                });
+
+                // Determine the source with maximum after value (for red coloring)
+                let maxAfter = 0;
+                sourceAfterMap.forEach((val, src) => {
+                    if (val > maxAfter) {
+                        maxAfter = val;
+                        topSource = src;
+                    }
+                });
+
+                // Find the link with maximum value to beforeTarget and afterTarget
+                let maxBeforeValue = 0;
+                let maxAfterValue = 0;
+                links.forEach(link => {
+                    if (link.target === beforeTarget && link.value > maxBeforeValue) {
+                        maxBeforeValue = link.value;
+                        maxBeforeLink = link;
+                    }
+                    if (link.target === afterTarget && link.value > maxAfterValue) {
+                        maxAfterValue = link.value;
+                        maxAfterLink = link;
+                    }
+                });
+
+                // Order source nodes by after value descending
+                const sourceNodes = nodes.filter(n => n !== beforeTarget && n !== afterTarget);
+                sourceNodes.sort((a, b) => (sourceAfterMap.get(b) || 0) - (sourceAfterMap.get(a) || 0));
+                const orderedNodes = [...sourceNodes, beforeTarget, afterTarget];
+                nodes = orderedNodes;
             }
 
-            // ------------------------------------------------------------
-            // Unify layout parameters for all views (same as original)
-            // ------------------------------------------------------------
+            // Unified layout parameters
             const nodeWidth = 80;
             const nodePadding = 25;
 
@@ -167,21 +192,22 @@ function buildSankey(viewType) {
             }
 
             // ------------------------------------------------------------
-            // Colors (same as original)
+            // Colors
             // ------------------------------------------------------------
             const colorScale = d3.scaleOrdinal(d3.schemeTableau10);
             const getNodeColor = (d) => {
                 if (viewType === "genres_out" || viewType === "artists_out") {
                     return d.type === "source" ? "#2c5f2d" : colorScale(d.name);
                 } else { // genres_in
-                    if (d.name === "Oceanus Folk (before)") return "#2c5f2d";
-                    if (d.name === "Oceanus Folk (after)") return "#8B8000";
+                    if (d.name === "Oceanus Folk (before)") return "#1f77b4"; // blue
+                    if (d.name === "Oceanus Folk (after)") return "#d62728";  // red
+                    if (topSource && d === topSource) return "#d62728";
                     return colorScale(d.name);
                 }
             };
 
             // ------------------------------------------------------------
-            // Draw links (identical style)
+            // Draw links (identical style, but highlight max before/after links)
             // ------------------------------------------------------------
             svg.append("g")
                 .attr("fill", "none")
@@ -191,13 +217,28 @@ function buildSankey(viewType) {
                 .append("path")
                 .attr("class", "link")
                 .attr("d", d3.sankeyLinkHorizontal())
-                .attr("stroke", d => getNodeColor(d.target))
-                .attr("stroke-width", d => Math.max(2, d.width))
-                .attr("stroke-opacity", 0.6)
+                .attr("stroke", d => {
+                    if (viewType === "genres_in" && (d === maxBeforeLink || d === maxAfterLink)) {
+                        return "#FFD700"; // gold highlight
+                    }
+                    return getNodeColor(d.target);
+                })
+                .attr("stroke-width", d => {
+                    if (viewType === "genres_in" && (d === maxBeforeLink || d === maxAfterLink)) {
+                        return Math.max(3, d.width * 1.2);
+                    }
+                    return Math.max(2, d.width);
+                })
+                .attr("stroke-opacity", 0.7)
                 .on("mouseenter", function(event, d) {
                     d3.select(this).attr("stroke-opacity", 1);
                     const original = d.originalValue !== undefined ? d.originalValue : d.value;
-                    tooltip.html(`<strong>${d.source.name} → ${d.target.name}</strong><br>Influence count: ${original}`)
+                    let highlightMsg = "";
+                    if (viewType === "genres_in") {
+                        if (d === maxBeforeLink) highlightMsg = " ★ Most influential before Sailor";
+                        if (d === maxAfterLink) highlightMsg = " ★ Most influential after Sailor";
+                    }
+                    tooltip.html(`<strong>${d.source.name} → ${d.target.name}</strong><br>Influence count: ${original}${highlightMsg}`)
                         .style("left", (event.pageX + 15) + "px")
                         .style("top", (event.pageY - 30) + "px")
                         .style("opacity", 1);
@@ -207,7 +248,7 @@ function buildSankey(viewType) {
                         .style("top", (event.pageY - 30) + "px");
                 })
                 .on("mouseleave", function() {
-                    d3.select(this).attr("stroke-opacity", 0.6);
+                    d3.select(this).attr("stroke-opacity", 0.7);
                     tooltip.style("opacity", 0);
                 });
 
@@ -251,7 +292,7 @@ function buildSankey(viewType) {
                 });
 
             // ------------------------------------------------------------
-            // Node labels – all horizontal (no rotation) for all views
+            // Node labels – horizontal for all nodes (no rotation)
             // ------------------------------------------------------------
             nodeGroup.append("text")
                 .attr("x", d => (d.x1 - d.x0) / 2)
@@ -268,15 +309,24 @@ function buildSankey(viewType) {
                 .style("text-shadow", "0px 0px 2px black")
                 .text(d => d.name.length > 35 ? d.name.slice(0, 32) + "…" : d.name);
 
-            // Optional legend for inflow view
+            // Legend for genres_in view (blue and red swatches)
             if (viewType === "genres_in") {
                 svg.append("text")
-                    .attr("x", innerWidth - 200)
+                    .attr("x", innerWidth - 220)
                     .attr("y", innerHeight + 25)
                     .attr("text-anchor", "start")
                     .style("fill", "#aaa")
                     .style("font-size", "11px")
-                    .text("🔹 Dark green: before Sailor | 🔸 Olive: after Sailor");
+                    .html("🔵 Blue: before Sailor &nbsp;&nbsp; 🔴 Red: after Sailor");
+                if (maxBeforeLink || maxAfterLink) {
+                    svg.append("text")
+                        .attr("x", innerWidth - 220)
+                        .attr("y", innerHeight + 40)
+                        .attr("text-anchor", "start")
+                        .style("fill", "#FFD700")
+                        .style("font-size", "11px")
+                        .html("⭐ Gold links = most influential in each period");
+                }
             }
         })
         .catch(error => {
