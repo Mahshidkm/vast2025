@@ -24,6 +24,7 @@ An interactive web application that visualizes the influence, collaboration, and
   - Select up to three artists to compare their profiles.
 
 ## 📁 Project Structure
+```
 ├── index.html # Main entry point – network view + tabs
 ├── css/
 │ ├── style.css
@@ -50,7 +51,7 @@ An interactive web application that visualizes the influence, collaboration, and
 | ├── genres_and_artists_influenced_by.html # Sankey container
 | └── superstar_predictor.html # Standalone predictor page
 | └── artist_career.html
-  
+ ``` 
 ## 🛠️ How to Run Locally
 
 1. **Clone the repository**  
