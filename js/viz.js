@@ -178,7 +178,7 @@ Promise.all([
     // 4. Node placement (non‑overlapping circles)
     // ------------------------------------------------------------
     const width = 1000, height = 1000;
-    const centerX = width/2 - 60, centerY = height/2 - 170;
+    const centerX = width/2 - 60 , centerY = height/2 - 170;
     const sailorRadius = 40;
     const bigCircleRadius = 320;
     const maxAttempts = 2000;
@@ -636,16 +636,19 @@ Promise.all([
             const contributions = rightLinks.filter(l => l.target === d.id && l.year <= currentYear);
             if (contributions.length) {
                 html += `First appearance in Sailor's life: ${d.firstYear}<br>`;
-                const byYear = new Map();
+                // Use Set to count each unique work only once per year
+                const byYear = new Map(); // year -> Set of work names
                 contributions.forEach(c => {
-                    if (!byYear.has(c.year)) byYear.set(c.year, []);
-                    byYear.get(c.year).push(c.work);
+                    if (!byYear.has(c.year)) byYear.set(c.year, new Set());
+                    byYear.get(c.year).add(c.work);
                 });
                 const yearsSorted = Array.from(byYear.keys()).sort((a,b)=>a-b);
                 for (let yr of yearsSorted) {
-                    html += `📅 ${yr}: ${byYear.get(yr).join(', ')}<br>`;
+                    const worksList = Array.from(byYear.get(yr));
+                    html += `📅 ${yr}: ${worksList.join(', ')}<br>`;
                 }
-                html += `<br>Total collaboration works: ${getRightCumulativeUniqueWorks(d.id, currentYear)}`;
+                const totalUnique = getRightCumulativeUniqueWorks(d.id, currentYear);
+                html += `<br>Total unique works: ${totalUnique}`;
             }
         } else if (d.type === "influenced") {
             const contributions = rightLinks.filter(l => l.target === d.id && l.year <= currentYear);
@@ -654,7 +657,8 @@ Promise.all([
                 contributions.forEach(cont => {
                     html += `📅 ${cont.year} | Influence score: ${cont.score}<br>`;
                 });
-                html += `<br>Total influence score: ${getRightCumulativeScore(d.id, currentYear).toFixed(1)}`;
+                const total = getRightCumulativeScore(d.id, currentYear);
+                html += `<br>Total influence score: ${total.toFixed(1)}`;
             }
         }
         tooltip.html(html).style("left", (event.pageX + 15) + "px").style("top", (event.pageY - 30) + "px").style("opacity", 1);
@@ -684,23 +688,26 @@ Promise.all([
             const contributions = rightLinks.filter(l => l.target === d.id && l.year <= currentYear);
             if (contributions.length) {
                 html += `First year: ${d.firstYear}<br>`;
-                const byYear = new Map();
+                const byYear = new Map(); // year -> Set of work names
                 contributions.forEach(c => {
                     if (!byYear.has(c.year)) byYear.set(c.year, new Set());
                     byYear.get(c.year).add(c.work);
                 });
                 const yearsSorted = Array.from(byYear.keys()).sort((a,b)=>a-b);
                 for (let yr of yearsSorted) {
-                    html += `📅 ${yr}: ${byYear.get(yr).size} unique work${byYear.get(yr).size !== 1 ? 's' : ''}<br>`;
+                    const worksList = Array.from(byYear.get(yr));
+                    html += `📅 ${yr}: ${worksList.join(', ')}<br>`;
                 }
-                html += `<br>Total collaboration works: ${getRightCumulativeUniqueWorks(d.id, currentYear)}`;
+                const totalUnique = getRightCumulativeUniqueWorks(d.id, currentYear);
+                html += `<br>Total unique works: ${totalUnique}`;
             }
         } else {
             const contributions = rightLinks.filter(l => l.target === d.id && l.year <= currentYear);
             if (contributions.length) {
                 html += `First year: ${d.firstYear}<br>`;
                 contributions.forEach(cont => { html += `📅 ${cont.year} | Influence score: ${cont.score}<br>`; });
-                html += `<br>Total influence score: ${getRightCumulativeScore(d.id, currentYear).toFixed(1)}`;
+                const total = getRightCumulativeScore(d.id, currentYear);
+                html += `<br>Total influence score: ${total.toFixed(1)}`;
             }
         }
         tooltip.html(html).style("left", (event.pageX + 15) + "px").style("top", (event.pageY - 30) + "px").style("opacity", 1);
